@@ -1404,6 +1404,11 @@ class DinosaurDatabase {
                 searchTimeout = setTimeout(() => {
                     this.currentFilters.search = e.target.value.toLowerCase();
                     this.applyFilters();
+                    
+                    // Track search query
+                    if (window.analytics && e.target.value.trim()) {
+                        window.analytics.trackDinosaurSearch(e.target.value.trim(), this.filteredDinosaurs.length);
+                    }
                 }, CONFIG.PERFORMANCE.SEARCH_DEBOUNCE);
             });
         }
@@ -1415,6 +1420,11 @@ class DinosaurDatabase {
                 e.target.classList.add('active');
                 this.currentFilters.type = e.target.dataset.type;
                 this.applyFilters();
+                
+                // Track filter usage
+                if (window.analytics) {
+                    window.analytics.trackFilterUsage('type', e.target.dataset.type, this.filteredDinosaurs.length);
+                }
             });
         });
         
@@ -1425,6 +1435,11 @@ class DinosaurDatabase {
                 e.target.classList.add('active');
                 this.currentFilters.timing = e.target.dataset.time;
                 this.applyFilters();
+                
+                // Track filter usage
+                if (window.analytics) {
+                    window.analytics.trackFilterUsage('timing', e.target.dataset.time, this.filteredDinosaurs.length);
+                }
             });
         });
         
@@ -1435,6 +1450,11 @@ class DinosaurDatabase {
                 e.target.classList.add('active');
                 this.currentFilters.zone = e.target.dataset.zone;
                 this.applyFilters();
+                
+                // Track filter usage
+                if (window.analytics) {
+                    window.analytics.trackFilterUsage('zone', e.target.dataset.zone, this.filteredDinosaurs.length);
+                }
             });
         });
         
@@ -1573,6 +1593,11 @@ class DinosaurDatabase {
                 const timing = icon.dataset.timing;
                 const type = icon.dataset.type;
                 const isActive = icon.dataset.active === 'true';
+                
+                // Track dinosaur view
+                if (window.analytics) {
+                    window.analytics.trackDinosaurView(dinoId, name, type);
+                }
                 
                 // If clicking the same icon, collapse it
                 if (currentlyExpanded === dinoId) {

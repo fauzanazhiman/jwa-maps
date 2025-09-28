@@ -1,6 +1,17 @@
 /* ==========================================================================
    Main Application for JWA Map
-   ========================================================================== */
+   =============        // My Location button
+        const myLocationBtn = document.getElementById('myLocationBtn');
+        if (myLocationBtn) {
+            myLocationBtn.addEventListener('click', () => {
+                this.getCurrentLocation();
+                
+                // Track location button click
+                if (window.analytics) {
+                    window.analytics.trackButtonClick('my_location');
+                }
+            });
+        }====================================================== */
 
 class JWAMapApp {
     constructor() {
@@ -48,6 +59,12 @@ class JWAMapApp {
                 window.app = this; // Make available for debugging
             }
             
+            // Track app initialization
+            if (window.analytics) {
+                window.analytics.trackAppLoad();
+                window.analytics.trackSessionStart();
+            }
+            
         } catch (error) {
             console.error('Failed to initialize application:', error);
             this.showError('Failed to load JWA Map. Please refresh the page.');
@@ -79,6 +96,19 @@ class JWAMapApp {
         // Add map click handler
         this.map.on('click', (e) => {
             this.handleMapClick(e);
+        });
+        
+        // Add map interaction tracking
+        this.map.on('zoomend', () => {
+            if (window.analytics) {
+                window.analytics.trackMapInteraction('zoom', this.map.getZoom(), this.map.getCenter());
+            }
+        });
+        
+        this.map.on('moveend', () => {
+            if (window.analytics) {
+                window.analytics.trackMapInteraction('pan', this.map.getZoom(), this.map.getCenter());
+            }
         });
         
         if (CONFIG.DEBUG.ENABLED) {
@@ -133,7 +163,18 @@ class JWAMapApp {
         const dinoPanel = document.getElementById('dinoPanel');
         if (togglePanelBtn && dinoPanel) {
             togglePanelBtn.addEventListener('click', () => {
+                const isOpening = !dinoPanel.classList.contains('open');
                 dinoPanel.classList.toggle('open');
+                
+                // Track panel interaction
+                if (window.analytics) {
+                    if (isOpening) {
+                        window.analytics.trackPanelOpen('dinosaur_finder');
+                    } else {
+                        window.analytics.trackPanelClose('dinosaur_finder');
+                    }
+                    window.analytics.trackButtonClick('dino_finder_toggle');
+                }
             });
         }
         
@@ -142,6 +183,12 @@ class JWAMapApp {
         if (closePanelBtn && dinoPanel) {
             closePanelBtn.addEventListener('click', () => {
                 dinoPanel.classList.remove('open');
+                
+                // Track panel close
+                if (window.analytics) {
+                    window.analytics.trackPanelClose('dinosaur_finder');
+                    window.analytics.trackButtonClick('panel_close');
+                }
             });
         }
         
@@ -182,12 +229,24 @@ class JWAMapApp {
         if (aboutBtn && aboutModal) {
             aboutBtn.addEventListener('click', () => {
                 aboutModal.style.display = 'flex';
+                
+                // Track about modal open
+                if (window.analytics) {
+                    window.analytics.trackPanelOpen('about_modal');
+                    window.analytics.trackButtonClick('about');
+                }
             });
         }
         
         if (closeAboutModal && aboutModal) {
             closeAboutModal.addEventListener('click', () => {
                 aboutModal.style.display = 'none';
+                
+                // Track about modal close
+                if (window.analytics) {
+                    window.analytics.trackPanelClose('about_modal');
+                    window.analytics.trackButtonClick('about_close');
+                }
             });
         }
         
@@ -196,6 +255,11 @@ class JWAMapApp {
             aboutModal.addEventListener('click', (e) => {
                 if (e.target === aboutModal) {
                     aboutModal.style.display = 'none';
+                    
+                    // Track modal close via outside click
+                    if (window.analytics) {
+                        window.analytics.trackPanelClose('about_modal');
+                    }
                 }
             });
         }
@@ -227,6 +291,11 @@ class JWAMapApp {
         if (myLocationBtn) {
             myLocationBtn.textContent = '📍 Getting location...';
             myLocationBtn.disabled = true;
+        }
+        
+        // Track location request
+        if (window.analytics) {
+            window.analytics.trackLocationRequest();
         }
         
         navigator.geolocation.getCurrentPosition(
@@ -267,6 +336,11 @@ class JWAMapApp {
             console.log('User location:', lat, lng, 'Zone:', this.currentUserZone);
             console.log('Map centered to user location');
         }
+        
+        // Track successful location
+        if (window.analytics) {
+            window.analytics.trackLocationSuccess(lat, lng, this.currentUserZone);
+        }
     }
     
     handleLocationError(error) {
@@ -290,6 +364,11 @@ class JWAMapApp {
         if (myLocationBtn) {
             myLocationBtn.textContent = '📍 ' + message;
             myLocationBtn.disabled = false;
+        }
+        
+        // Track location error
+        if (window.analytics) {
+            window.analytics.trackLocationError(message);
         }
     }
     
@@ -521,6 +600,11 @@ class JWAMapApp {
         if (!dinosaur) {
             console.error('Dinosaur not found:', dinoId);
             return;
+        }
+        
+        // Track dinosaur locate action
+        if (window.analytics) {
+            window.analytics.trackDinosaurLocate(dinoId, dinosaur.name, null, null);
         }
         
         // Get reference coordinates (user location -> map center -> default)
