@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jwa-maps.fauzan-azhiman.com/sitemap.xml
+
+# Block access to development files
+Disallow: /js/
+Disallow: /css/
+Disallow: /data/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow important assets
+Allow: /images/
+Allow: /favicon.ico
+Allow: /manifest.json

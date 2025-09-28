@@ -3,10 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>JWA Map - Jurassic World Alive Dinosaur Location Tracker & Zone Finder</title>
+    <meta name="title" content="JWA Map - Jurassic World Alive Dinosaur Location Tracker & Zone Finder">
+    <meta name="description" content="Interactive dinosaur location finder for Jurassic World Alive. Find dinosaurs by zone, type, and timing. Track spawn locations with real-time zone mapping for JWA players.">
+    <meta name="keywords" content="Jurassic World Alive, JWA, dinosaur locations, JWA map, dinosaur finder, JWA zones, spawn locations, Jurassic World Alive tracker, JWA guide, dinosaur spawns">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Fauzan Azhiman">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jwa-maps.fauzan-azhiman.com">
+    <meta property="og:title" content="JWA Map - Jurassic World Alive Dinosaur Location Tracker">
+    <meta property="og:description" content="Interactive dinosaur location finder for Jurassic World Alive. Find dinosaurs by zone, type, and timing with real-time zone mapping.">
+    <meta property="og:image" content="https://jwa-maps.fauzan-azhiman.com/images/jwa-map-preview.jpg">
+    <meta property="og:site_name" content="JWA Map">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jwa-maps.fauzan-azhiman.com">
+    <meta property="twitter:title" content="JWA Map - Jurassic World Alive Dinosaur Tracker">
+    <meta property="twitter:description" content="Interactive dinosaur location finder for Jurassic World Alive. Find dinosaurs by zone, type, and timing.">
+    <meta property="twitter:image" content="https://jwa-maps.fauzan-azhiman.com/images/jwa-map-preview.jpg">
+    <meta property="twitter:creator" content="@fauzan_azhiman">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="application-name" content="JWA Map">
+    <meta name="msapplication-TileColor" content="#2c3e50">
+    <meta name="theme-color" content="#2c3e50">
+    
+    <!-- Apple Touch Icon & Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jwa-maps.fauzan-azhiman.com">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "JWA Map",
+        "alternativeName": "Jurassic World Alive Map",
+        "description": "Interactive dinosaur location finder and zone tracker for Jurassic World Alive mobile game",
+        "url": "https://jwa-maps.fauzan-azhiman.com",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Fauzan Azhiman",
+            "url": "https://fauzan-azhiman.com"
+        },
+        "creator": {
+            "@type": "Person",
+            "name": "Fauzan Azhiman",
+            "url": "https://fauzan-azhiman.com"
+        },
+        "datePublished": "2025-09-28",
+        "dateModified": "2025-09-28",
+        "keywords": "Jurassic World Alive, JWA, dinosaur locations, game tracker, zone mapping",
+        "genre": "Gaming Utility",
+        "isAccessibleForFree": true,
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://jwa-maps.fauzan-azhiman.com/?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- PWA Mobile App Capabilities -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="theme-color" content="#2c3e50">
-    <title>JWA Map - Jurassic World Alive Zone Tracker</title>
+    <meta name="apple-mobile-web-app-title" content="JWA Map">
+    
+    <!-- Performance & Preload Hints -->
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -51,13 +138,20 @@
 
     <!-- Main Application -->
     <div id="app">
+        <!-- SEO Content (hidden but accessible) -->
+        <section class="seo-content" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+            <h1>Jurassic World Alive Dinosaur Location Tracker</h1>
+            <p>Find dinosaur spawn locations in Jurassic World Alive with our interactive zone mapping tool. Track creatures by type (Common, Rare, Epic, Omega), timing (Dawn, Day, Dusk, Night), and specific zones (Zone 1, Zone 2, Zone 3, Zone 4).</p>
+            <p>Features: Real-time zone mapping, location-based dinosaur suggestions, mobile-optimized interface, comprehensive dinosaur database with spawn timing and zone information.</p>
+        </section>
+        
         <!-- Header -->
-        <header class="header">
-            <h1>JWA Map</h1>
+        <header class="header" role="banner">
+            <h1 itemprop="name">JWA Map</h1>
             <div class="header-controls">
-                <button id="myLocationBtn" class="btn location-btn">📍 My Location</button>
-                <button id="togglePanelBtn" class="btn panel-btn">🦕 Dino Finder</button>
-                <button id="aboutBtn" class="btn about-btn">ℹ️ About</button>
+                <button id="myLocationBtn" class="btn location-btn" aria-label="Find my current location">📍 My Location</button>
+                <button id="togglePanelBtn" class="btn panel-btn" aria-label="Open dinosaur finder panel">🦕 Dino Finder</button>
+                <button id="aboutBtn" class="btn about-btn" aria-label="About this application">ℹ️ About</button>
                 <div class="session-info hidden">
                     Session: <span id="sessionTimer">60:00</span> remaining
                 </div>
@@ -65,8 +159,8 @@
         </header>
 
         <!-- Map Container -->
-        <div id="mapContainer">
-            <div id="map"></div>
+        <main id="mapContainer" role="main" aria-label="Interactive dinosaur location map">
+            <div id="map" aria-label="Jurassic World Alive zone map"></div>
             
             <!-- Map Controls -->
             <div class="map-controls">
@@ -82,28 +176,32 @@
         </div>
 
         <!-- Dino Browser Panel -->
-        <div id="dinoPanel" class="side-panel">
-            <div class="panel-header">
-                <h3>🦕 Dinosaur Finder</h3>
-                <button id="closePanelBtn" class="btn-close">×</button>
-            </div>
+        <aside id="dinoPanel" class="side-panel" role="complementary" aria-label="Dinosaur finder and filters">
+            <header class="panel-header">
+                <h2>🦕 Dinosaur Finder</h2>
+                <button id="closePanelBtn" class="btn-close" aria-label="Close dinosaur finder panel">×</button>
+            </header>
             
-            <div class="search-controls">
-                <input type="text" id="dinoSearch" placeholder="Search dinosaurs...">
+            <section class="search-controls">
+                <div class="search-input-group">
+                    <label for="dinoSearch" class="sr-only">Search dinosaurs by name</label>
+                    <input type="search" id="dinoSearch" placeholder="Search dinosaurs..." aria-describedby="search-help">
+                    <small id="search-help" class="sr-only">Type dinosaur name to find specific creatures</small>
+                </div>
                 
-                <div class="filter-section">
-                    <h4>Filter by Type:</h4>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-type="all">All</button>
-                        <button class="filter-btn" data-type="common">Common</button>
-                        <button class="filter-btn" data-type="rare">Rare</button>
-                        <button class="filter-btn" data-type="epic">Epic</button>
-                        <button class="filter-btn" data-type="omega">Omega</button>
+                <div class="filter-section" role="group" aria-labelledby="type-filter-label">
+                    <h3 id="type-filter-label">Filter by Type:</h3>
+                    <div class="filter-buttons" role="radiogroup" aria-labelledby="type-filter-label">
+                        <button class="filter-btn active" data-type="all" role="radio" aria-checked="true">All</button>
+                        <button class="filter-btn" data-type="common" role="radio" aria-checked="false">Common</button>
+                        <button class="filter-btn" data-type="rare" role="radio" aria-checked="false">Rare</button>
+                        <button class="filter-btn" data-type="epic" role="radio" aria-checked="false">Epic</button>
+                        <button class="filter-btn" data-type="omega" role="radio" aria-checked="false">Omega</button>
                     </div>
                 </div>
                 
-                <div class="filter-section">
-                    <h4>Filter by Timing:</h4>
+                <div class="filter-section" role="group" aria-labelledby="timing-filter-label">
+                    <h3 id="timing-filter-label">Filter by Timing:</h3>
                     <div class="filter-buttons">
                         <button class="time-btn active" data-time="all">All</button>
                         <button class="time-btn" data-time="dawn">Dawn</button>

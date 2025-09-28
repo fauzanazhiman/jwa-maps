@@ -1,0 +1,60 @@
+{
+    "name": "JWA Map - Jurassic World Alive Dinosaur Tracker",
+    "short_name": "JWA Map",
+    "description": "Interactive dinosaur location finder for Jurassic World Alive",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1a1a1a",
+    "theme_color": "#2c3e50",
+    "orientation": "portrait",
+    "categories": ["games", "utilities"],
+    "icons": [
+        {
+            "src": "images/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/favicon.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Find Dinosaurs",
+            "short_name": "Find",
+            "description": "Search for specific dinosaurs",
+            "url": "/?panel=open",
+            "icons": [
+                {
+                    "src": "images/favicon.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/jwa-map-preview.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpeg",
+            "form_factor": "wide",
+            "label": "JWA Map desktop view showing zone mapping"
+        },
+        {
+            "src": "images/jwa-map-preview.jpg",
+            "sizes": "750x1334",
+            "type": "image/jpeg",
+            "form_factor": "narrow",
+            "label": "JWA Map mobile view with dinosaur finder"
+        }
+    ]
+}
