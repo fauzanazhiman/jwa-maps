@@ -1,0 +1,1390 @@
+/* ==========================================================================
+   JWA Map Styles
+   ========================================================================== */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Safe area insets for devices with notches */
+    --safe-area-inset-top: env(safe-area-inset-top);
+    --safe-area-inset-right: env(safe-area-inset-right);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    --safe-area-inset-left: env(safe-area-inset-left);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    overflow: hidden;
+    /* Prevent zoom on mobile */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Fix viewport issues */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* Handle safe areas */
+    padding-top: var(--safe-area-inset-top);
+    padding-right: var(--safe-area-inset-right);
+    padding-bottom: var(--safe-area-inset-bottom);
+    padding-left: var(--safe-area-inset-left);
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Modal Styles */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.ad-placeholder {
+    background-color: #333;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px dashed #666;
+}
+
+.ad-placeholder p {
+    margin: 10px 0;
+    color: #aaa;
+}
+
+/* About Modal Styles */
+.about-modal {
+    max-width: 600px;
+    text-align: left;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #4CAF50;
+    font-size: clamp(18px, 4vw, 24px);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.author-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.author-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.author-details h3 {
+    margin: 0 0 8px 0;
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.author-title {
+    margin: 0 0 12px 0;
+    color: #bbb;
+    font-style: italic;
+}
+
+.author-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.author-link:hover {
+    text-decoration: underline;
+}
+
+.project-info {
+    line-height: 1.6;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+}
+
+.features h4 {
+    color: #4CAF50;
+    margin-bottom: 12px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 6px 0;
+    color: #ddd;
+}
+
+.version-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Responsive about modal */
+@media (max-width: 768px) {
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .avatar-placeholder {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    position: relative;
+    min-height: 60px;
+    flex-shrink: 0;
+}
+
+.header h1 {
+    color: #4CAF50;
+    font-size: clamp(18px, 4vw, 24px);
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.session-info {
+    background-color: #34495e;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: clamp(11px, 2.5vw, 14px);
+    white-space: nowrap;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: clamp(8px, 2vw, 12px) clamp(10px, 3vw, 16px);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(12px, 3vw, 14px);
+    transition: background-color 0.3s;
+    min-width: 44px; /* Minimum touch target size */
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.location-btn {
+    background-color: #3498db;
+}
+
+.location-btn:hover {
+    background-color: #2980b9;
+}
+
+.panel-btn {
+    background-color: #e67e22;
+}
+
+.panel-btn:hover {
+    background-color: #d35400;
+}
+
+/* Map Container */
+#mapContainer {
+    position: relative;
+    height: calc(100vh - 60px);
+    width: 100vw;
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    /* Prevent touch zoom conflicts */
+    touch-action: pan-x pan-y;
+}
+
+/* Map Controls */
+.map-controls {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 12px;
+    border-radius: 8px;
+    min-width: clamp(160px, 40vw, 220px);
+    backdrop-filter: blur(4px);
+}
+
+.zoom-info {
+    margin-bottom: 8px;
+    font-size: clamp(12px, 3vw, 14px);
+    color: #fff;
+}
+
+.grid-controls label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: clamp(12px, 3vw, 14px);
+    color: #fff;
+    min-height: 44px; /* Touch target */
+}
+
+.grid-controls input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(clamp(1, 3vw, 1.2));
+}
+
+/* Side Panel */
+.side-panel {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #2a2a2a;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+    /* Better mobile scrolling */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+}
+
+.side-panel.open {
+    right: 0;
+}
+
+.panel-header {
+    background-color: #34495e;
+    padding: clamp(12px, 4vw, 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1002;
+    min-height: 60px;
+}
+
+.panel-header h3 {
+    margin: 0;
+    color: #4CAF50;
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: clamp(20px, 5vw, 24px);
+    cursor: pointer;
+    padding: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.btn-close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Search Controls */
+.search-controls {
+    padding: clamp(12px, 4vw, 20px);
+}
+
+#dinoSearch {
+    width: 100%;
+    padding: clamp(10px, 3vw, 12px);
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: clamp(14px, 4vw, 16px);
+    margin-bottom: clamp(15px, 4vw, 20px);
+    /* Prevent zoom on iOS */
+    -webkit-text-size-adjust: 100%;
+}
+
+#dinoSearch:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.filter-section {
+    margin-bottom: clamp(15px, 4vw, 20px);
+}
+
+.filter-section h4 {
+    margin-bottom: 8px;
+    color: #4CAF50;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.filter-buttons, .time-buttons, .zone-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(6px, 2vw, 8px);
+}
+
+.filter-btn, .time-btn, .zone-btn {
+    padding: clamp(6px, 2vw, 8px) clamp(8px, 2.5vw, 12px);
+    border: 1px solid #666;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(11px, 2.5vw, 12px);
+    transition: all 0.3s;
+    min-height: 44px; /* Touch target */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.filter-btn:hover, .time-btn:hover, .zone-btn:hover {
+    background-color: #555;
+}
+
+.filter-btn.active, .time-btn.active, .zone-btn.active {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Dino Type Colors */
+.filter-btn[data-type="common"].active {
+    background-color: #888;
+    border-color: #888;
+}
+
+.filter-btn[data-type="rare"].active {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.filter-btn[data-type="epic"].active {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+.filter-btn[data-type="omega"].active {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+}
+
+/* Dino Results */
+.dino-results {
+    padding: 0 clamp(12px, 4vw, 20px) clamp(12px, 4vw, 20px);
+}
+
+/* Icon Grid Layout */
+.dino-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+    padding: 16px 0;
+}
+
+/* Individual Dino Icon */
+.dino-icon {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+    /* Touch feedback */
+    -webkit-tap-highlight-color: rgba(76, 175, 80, 0.2);
+}
+
+.dino-icon:hover, .dino-icon:active {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.dino-icon.expanded {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.dino-icon-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #4CAF50;
+    border-radius: 12px;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dino-icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dino-emoji {
+    font-size: 32px;
+    color: #4CAF50;
+}
+
+.dino-icon-container.image-error .dino-emoji {
+    font-size: 24px;
+}
+
+/* Type Indicators */
+.dino-type-indicator {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #1a1a1a;
+}
+
+.dino-type-indicator.common {
+    background-color: #888;
+}
+
+.dino-type-indicator.rare {
+    background-color: #3498db;
+}
+
+.dino-type-indicator.epic {
+    background-color: #f39c12;
+}
+
+.dino-type-indicator.omega {
+    background-color: #9b59b6;
+}
+
+/* Active Timing Indicator */
+.active-indicator {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 12px;
+    height: 12px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    border: 2px solid #1a1a1a;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    line-height: 8px;
+}
+
+/* Icon Border Colors by Type */
+.dino-icon.common .dino-icon-container {
+    border-color: #888;
+}
+
+.dino-icon.rare .dino-icon-container {
+    border-color: #3498db;
+}
+
+.dino-icon.epic .dino-icon-container {
+    border-color: #f39c12;
+}
+
+.dino-icon.omega .dino-icon-container {
+    border-color: #9b59b6;
+}
+
+/* Active Timing Glow */
+.dino-icon.active-timing .dino-icon-container {
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Expandable Details */
+.dino-expanded {
+    margin: 16px 0;
+    padding: 0;
+}
+
+.dino-expanded-content {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid #4CAF50;
+}
+
+.dino-expanded-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.dino-expanded-header h4 {
+    margin: 0;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #ffffff;
+}
+
+.dino-expanded-info {
+    margin-bottom: 12px;
+}
+
+.info-row {
+    margin-bottom: 8px;
+    font-size: clamp(13px, 3.2vw, 14px);
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.info-row strong {
+    color: #ffffff;
+}
+
+.dino-expanded-actions {
+    text-align: center;
+}
+
+/* Type badges in expanded view */
+.dino-expanded-header .dino-type-badge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: clamp(11px, 2.8vw, 12px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dino-expanded-header .dino-type-badge.common {
+    background-color: #888;
+}
+
+.dino-expanded-header .dino-type-badge.rare {
+    background-color: #3498db;
+}
+
+.dino-expanded-header .dino-type-badge.epic {
+    background-color: #f39c12;
+}
+
+.dino-expanded-header .dino-type-badge.omega {
+    background-color: #9b59b6;
+}
+
+/* Zone Results Header */
+.zone-results-header {
+    background-color: #2a2a2a;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    border-left: 4px solid #4CAF50;
+}
+
+.zone-results-header h4 {
+    margin: 0 0 8px 0;
+    font-size: clamp(16px, 4vw, 18px);
+    color: #4CAF50;
+}
+
+.zone-results-header p {
+    margin: 0 0 12px 0;
+    color: #ccc;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.clear-zone-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: clamp(12px, 3vw, 14px);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-zone-btn:hover {
+    background-color: #777;
+}
+
+/* Popup Actions */
+.popup-actions {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.popup-actions .btn-small {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-actions .btn-small:hover {
+    background-color: #45a049;
+}
+
+/* Dino Location Popup */
+.dino-location-popup {
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.dino-location-popup h4 {
+    margin: 0 0 8px 0;
+    color: #4CAF50;
+    font-size: 16px;
+}
+
+.dino-location-popup p {
+    margin: 4px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.dino-location-popup strong {
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .dino-grid {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 8px;
+    }
+    
+    .dino-icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .dino-emoji {
+        font-size: 28px;
+    }
+    
+    .dino-type-indicator {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .active-indicator {
+        width: 10px;
+        height: 10px;
+        line-height: 6px;
+    }
+}
+
+.dino-item {
+    background-color: #333;
+    border-left: 4px solid #4CAF50;
+    padding: clamp(12px, 3vw, 15px);
+    margin-bottom: 8px;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    /* Touch feedback */
+    -webkit-tap-highlight-color: rgba(76, 175, 80, 0.2);
+}
+
+.dino-item:hover, .dino-item:active {
+    background-color: #3a3a3a;
+}
+
+.dino-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.dino-name {
+    font-size: clamp(14px, 3.5vw, 16px);
+    font-weight: bold;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.dino-type-badge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: clamp(10px, 2.5vw, 11px);
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.dino-info {
+    font-size: clamp(12px, 3vw, 14px);
+    color: #aaa;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.dino-description {
+    font-size: clamp(11px, 2.5vw, 12px);
+    color: #ccc;
+    line-height: 1.3;
+    margin-top: 6px;
+}
+
+.dino-zones {
+    font-size: clamp(12px, 3vw, 14px);
+    color: #4CAF50;
+    margin-top: 4px;
+}
+
+.current-indicator {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: clamp(10px, 2.5vw, 11px);
+}
+
+/* Dino Type Colors for Border */
+.dino-item.common {
+    border-left-color: #888;
+}
+
+.dino-item.rare {
+    border-left-color: #3498db;
+}
+
+.dino-item.epic {
+    border-left-color: #f39c12;
+}
+
+.dino-item.omega {
+    border-left-color: #9b59b6;
+}
+
+/* Loading Screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.loading-content h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.loading-spinner {
+    border: 4px solid #333;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Zone Styles for Map */
+.zone {
+    stroke-width: 1px;
+    stroke-opacity: 0.8;
+    fill-opacity: 0.4 !important;
+    pointer-events: auto;
+}
+
+.zone-1 {
+    stroke: #FF6B6B;
+    fill: #FF6B6B;
+}
+
+.zone-2 {
+    stroke: #4ECDC4;
+    fill: #4ECDC4;
+}
+
+.zone-3 {
+    stroke: #45B7D1;
+    fill: #45B7D1;
+}
+
+.zone-4 {
+    stroke: #96CEB4;
+    fill: #96CEB4;
+}
+
+/* Ensure zones appear below labels but above grid */
+.leaflet-overlay-pane svg {
+    z-index: 100;
+}
+
+.zone-label {
+    z-index: 1000 !important;
+}
+
+/* Additional UI Elements */
+.ad-video-simulator {
+    text-align: center;
+    padding: 20px;
+}
+
+.ad-progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.ad-progress {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.ad-controls {
+    margin-top: 15px;
+}
+
+.emergency-bypass {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.emergency-bypass small {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 12px;
+    padding: 0;
+}
+
+.btn-link:hover {
+    color: #45a049;
+}
+
+kbd {
+    background-color: #333;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 11px;
+    border: 1px solid #555;
+}
+
+.session-expired,
+.adblocker-message,
+.error-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.session-expired-content,
+.adblocker-content,
+.error-content {
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.session-expired h2,
+.adblocker-message h2,
+.error-screen h2 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.btn-small {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #45a049;
+}
+
+.locate-btn {
+    background-color: #3498db;
+}
+
+.locate-btn:hover {
+    background-color: #2980b9;
+}
+
+.dino-type-badge {
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dino-type-badge.common {
+    background-color: #888;
+    color: white;
+}
+
+.dino-type-badge.rare {
+    background-color: #3498db;
+    color: white;
+}
+
+.dino-type-badge.epic {
+    background-color: #f39c12;
+    color: white;
+}
+
+.dino-type-badge.omega {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.dino-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.current-indicator {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.dino-item.active-timing {
+    border-left-width: 6px;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.dino-actions {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.zone-results-header {
+    background-color: #34495e;
+    padding: 15px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 0;
+}
+
+.zone-results-header h4 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+.zone-results-header p {
+    margin: 5px 0 0 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #aaa;
+}
+
+.user-location-popup,
+.click-popup,
+.dino-location-popup,
+.zone-popup {
+    min-width: 200px;
+}
+
+.user-location-popup h4,
+.click-popup h4,
+.dino-location-popup h4,
+.zone-popup h4 {
+    margin: 0 0 10px 0;
+    color: #4CAF50;
+}
+
+.zone-highlight {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+/* Zone label improvements */
+.zone-label {
+    z-index: 1000 !important;
+}
+
+.zone-label-content {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    color: white !important;
+    border: 2px solid;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    white-space: nowrap;
+    min-width: 60px;
+    /* Remove background-color override to allow zone colors to show */
+    backdrop-filter: blur(1px);
+}
+
+/* New label marker class for better control */
+.zone-label-marker {
+    z-index: 2000 !important;
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.zone-label-marker span {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+}
+
+/* Ensure labels are visible at all zoom levels */
+.leaflet-zoom-anim .zone-label,
+.leaflet-zoom-anim .zone-label-marker {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Make sure labels stay on top */
+.leaflet-marker-pane .zone-label,
+.leaflet-marker-pane .zone-label-marker {
+    z-index: 2000 !important;
+}
+
+/* Grid and zone visibility at different zoom levels */
+.leaflet-zoom-level-low .zone-label {
+    display: none;
+}
+
+/* Mobile First Responsive Design */
+
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 8px 12px;
+        min-height: 56px;
+    }
+    
+    .header-controls {
+        gap: 4px;
+    }
+    
+    .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .session-info {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    
+    .side-panel {
+        width: 100vw;
+        right: -100vw;
+    }
+    
+    .side-panel.open {
+        right: 0;
+    }
+    
+    .map-controls {
+        position: fixed;
+        top: 64px;
+        right: 4px;
+        left: auto;
+        width: auto;
+        min-width: auto;
+        padding: 8px;
+        backdrop-filter: blur(8px);
+        /* Ensure it doesn't conflict with zoom controls */
+        max-width: calc(100vw - 80px);
+    }
+    
+    .modal-content {
+        padding: 16px;
+        margin: 16px;
+        width: calc(100vw - 32px);
+        max-width: none;
+    }
+    
+    .ad-placeholder {
+        padding: 20px 10px;
+        margin: 10px 0;
+    }
+    
+    #mapContainer {
+        height: calc(100vh - 56px);
+    }
+    
+    /* Move Leaflet zoom controls to not conflict */
+    .leaflet-control-zoom {
+        margin-left: 8px !important;
+        margin-top: 8px !important;
+    }
+}
+
+/* Medium Mobile Devices (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+        padding: 10px 16px;
+    }
+    
+    .side-panel {
+        width: 100vw;
+        right: -100vw;
+    }
+    
+    .side-panel.open {
+        right: 0;
+    }
+    
+    .map-controls {
+        top: 6px;
+        right: 6px;
+        left: auto;
+        min-width: 180px;
+        /* Ensure proper spacing from zoom controls */
+        max-width: calc(100vw - 80px);
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .side-panel {
+        width: 60vw;
+        max-width: 400px;
+        right: -60vw;
+    }
+    
+    .side-panel.open {
+        right: 0;
+    }
+}
+
+/* Desktop (1025px+) */
+@media screen and (min-width: 1025px) {
+    .side-panel {
+        width: 400px;
+        right: -400px;
+    }
+    
+    .side-panel.open {
+        right: 0;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .zone-label-content {
+        font-size: 12px;
+    }
+}
+
+/* Landscape Mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .header {
+        padding: 4px 12px;
+        min-height: 48px;
+    }
+    
+    .header h1 {
+        font-size: 16px;
+    }
+    
+    .btn {
+        padding: 6px 8px;
+        font-size: 11px;
+        min-height: 36px;
+    }
+    
+    .map-controls {
+        padding: 6px;
+        top: 52px;
+    }
+    
+    #mapContainer {
+        height: calc(100vh - 48px);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-width: 48px;
+        min-height: 48px;
+    }
+    
+    .grid-controls label {
+        min-height: 48px;
+        padding: 8px 0;
+    }
+    
+    /* Increase touch targets for mobile */
+    .leaflet-control-zoom a {
+        width: 48px !important;
+        height: 48px !important;
+        line-height: 48px !important;
+    }
+}
