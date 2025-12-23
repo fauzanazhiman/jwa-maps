@@ -50,1330 +50,1674 @@ class DinosaurDatabase {
     }
     
     getJWADinosaurData() {
-        // Real JWA dinosaur data from dinodex
+        // Real JWA dinosaur data from dinodex (updated 2025-12-08)
         return [
-  {
-    "id": 1,
-    "name": "Acrocanthosaurus",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/acrocanthosaurus.png"
-  },
-  {
-    "id": 2,
-    "name": "Alanqa",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/alanqa.png"
-  },
-  {
-    "id": 3,
-    "name": "Albertosaurus",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/albertosaurus.png"
-  },
-  {
-    "id": 4,
-    "name": "Amphicyon",
-    "type": "common",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/amphicyon.png"
-  },
-  {
-    "id": 5,
-    "name": "Animantarx",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/animantarx.png"
-  },
-  {
-    "id": 6,
-    "name": "Ankylosaurus",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/ankylosaurus.png"
-  },
-  {
-    "id": 7,
-    "name": "Ankylosaurus Gen 2",
-    "type": "common",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/ankylosaurus_gen_2.png"
-  },
-  {
-    "id": 8,
-    "name": "Anurognathus",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/anurognathus.png"
-  },
-  {
-    "id": 9,
-    "name": "Apatosaurus",
-    "type": "common",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/apatosaurus.png"
-  },
-  {
-    "id": 10,
-    "name": "Archaeopteryx",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/archaeopteryx.png"
-  },
-  {
-    "id": 11,
-    "name": "Baryonyx Gen 2",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/baryonyx_gen_2.png"
-  },
-  {
-    "id": 12,
-    "name": "Beelzebufo",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/beelzebufo.png"
-  },
-  {
-    "id": 13,
-    "name": "Brunette",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/brunette.png"
-  },
-  {
-    "id": 14,
-    "name": "Carbonemys",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/carbonemys.png"
-  },
-  {
-    "id": 15,
-    "name": "Compsognathus Gen 2",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/compsognathus_gen_2.png"
-  },
-  {
-    "id": 16,
-    "name": "Cryolophosaurus",
-    "type": "omega",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/cryolophosaurus.png"
-  },
-  {
-    "id": 17,
-    "name": "Dakotaraptor",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dakotaraptor.png"
-  },
-  {
-    "id": 18,
-    "name": "Darwinopterus",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/darwinopterus.png"
-  },
-  {
-    "id": 19,
-    "name": "Deinosuchus",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/deinosuchus.png"
-  },
-  {
-    "id": 20,
-    "name": "Deinotherium",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/deinotherium.png"
-  },
-  {
-    "id": 21,
-    "name": "Dilophosaurus Gen 2",
-    "type": "common",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dilophosaurus_gen_2.png"
-  },
-  {
-    "id": 22,
-    "name": "Dimetrodon",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dimetrodon.png"
-  },
-  {
-    "id": 23,
-    "name": "Dimetrodon Gen 2",
-    "type": "common",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dimetrodon_gen_2.png"
-  },
-  {
-    "id": 24,
-    "name": "Dimorphodon",
-    "type": "common",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dimorphodon.png"
-  },
-  {
-    "id": 25,
-    "name": "Diplocaulus Gen 2",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/diplocaulus_gen_2.png"
-  },
-  {
-    "id": 26,
-    "name": "Diplodocus",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/diplodocus.png"
-  },
-  {
-    "id": 27,
-    "name": "Dodo",
-    "type": "epic",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dodo.png"
-  },
-  {
-    "id": 28,
-    "name": "Dsungaripterus",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/dsungaripterus.png"
-  },
-  {
-    "id": 29,
-    "name": "Echo",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/echo.png"
-  },
-  {
-    "id": 30,
-    "name": "Edmontosaurus",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/edmontosaurus.png"
-  },
-  {
-    "id": 31,
-    "name": "Einiosaurus",
-    "type": "common",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/einiosaurus.png"
-  },
-  {
-    "id": 32,
-    "name": "Elasmotherium",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/elasmotherium.png"
-  },
-  {
-    "id": 33,
-    "name": "Erlikosaurus Gen 2",
-    "type": "rare",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/erlikosaurus_gen_2.png"
-  },
-  {
-    "id": 34,
-    "name": "Erythrosuchus",
-    "type": "omega",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/erythrosuchus.png"
-  },
-  {
-    "id": 35,
-    "name": "Glyptodon",
-    "type": "common",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/glyptodon.png"
-  },
-  {
-    "id": 36,
-    "name": "Gorgosaurus",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/gorgosaurus.png"
-  },
-  {
-    "id": 37,
-    "name": "Haast Eagle",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/haast_eagle.png"
-  },
-  {
-    "id": 38,
-    "name": "Hatzegopteryx",
-    "type": "common",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/hatzegopteryx.png"
-  },
-  {
-    "id": 39,
-    "name": "Homalocephale",
-    "type": "omega",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/homalocephale.png"
-  },
-  {
-    "id": 40,
-    "name": "Inostrancevia",
-    "type": "common",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/inostrancevia.png"
-  },
-  {
-    "id": 41,
-    "name": "Kaprosuchus",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/kaprosuchus.png"
-  },
-  {
-    "id": 42,
-    "name": "Koolasuchus",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/koolasuchus.png"
-  },
-  {
-    "id": 43,
-    "name": "Koolasuchus Gen 2",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/koolasuchus_gen_2.png"
-  },
-  {
-    "id": 44,
-    "name": "Lystrosaurus",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/lystrosaurus.png"
-  },
-  {
-    "id": 45,
-    "name": "Majungasaurus",
-    "type": "common",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/majungasaurus.png"
-  },
-  {
-    "id": 46,
-    "name": "Megaloceros",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/megaloceros.png"
-  },
-  {
-    "id": 47,
-    "name": "Megistotherium",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/megistotherium.png"
-  },
-  {
-    "id": 48,
-    "name": "Monolophosaurus",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/monolophosaurus.png"
-  },
-  {
-    "id": 49,
-    "name": "Nundasuchus",
-    "type": "common",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/nundasuchus.png"
-  },
-  {
-    "id": 50,
-    "name": "Ophiacodon",
-    "type": "common",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/ophiacodon.png"
-  },
-  {
-    "id": 51,
-    "name": "Ornithomimus",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/ornithomimus.png"
-  },
-  {
-    "id": 52,
-    "name": "Parasaurolophus",
-    "type": "common",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/parasaurolophus.png"
-  },
-  {
-    "id": 53,
-    "name": "Phorusrhacos",
-    "type": "common",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/phorusrhacos.png"
-  },
-  {
-    "id": 54,
-    "name": "Postosuchus",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/postosuchus.png"
-  },
-  {
-    "id": 55,
-    "name": "Proceratosaurus",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/proceratosaurus.png"
-  },
-  {
-    "id": 56,
-    "name": "Protoceratops",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/protoceratops.png"
-  },
-  {
-    "id": 57,
-    "name": "Pteranodon",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/pteranodon.png"
-  },
-  {
-    "id": 58,
-    "name": "Quetzalcoatlus",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/quetzalcoatlus.png"
-  },
-  {
-    "id": 59,
-    "name": "Quetzalcoatlus Gen 2",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/quetzalcoatlus_gen_2.png"
-  },
-  {
-    "id": 60,
-    "name": "Rajasaurus",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/rajasaurus.png"
-  },
-  {
-    "id": 61,
-    "name": "Rinchenia",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/rinchenia.png"
-  },
-  {
-    "id": 62,
-    "name": "Sarcosuchus",
-    "type": "common",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/sarcosuchus.png"
-  },
-  {
-    "id": 63,
-    "name": "Saurornitholestes",
-    "type": "common",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/saurornitholestes.png"
-  },
-  {
-    "id": 64,
-    "name": "Scaphognathus",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/scaphognathus.png"
-  },
-  {
-    "id": 65,
-    "name": "Scutosaurus",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/scutosaurus.png"
-  },
-  {
-    "id": 66,
-    "name": "Secodontosaurus",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/secodontosaurus.png"
-  },
-  {
-    "id": 67,
-    "name": "Smilodon",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/smilodon.png"
-  },
-  {
-    "id": 68,
-    "name": "Sonorasaurus",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/sonorasaurus.png"
-  },
-  {
-    "id": 69,
-    "name": "Sphaerotholus",
-    "type": "rare",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/sphaerotholus.png"
-  },
-  {
-    "id": 70,
-    "name": "Spinosaurus Gen 2",
-    "type": "epic",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/spinosaurus_gen_2.png"
-  },
-  {
-    "id": 71,
-    "name": "Struthiomimus",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/struthiomimus.png"
-  },
-  {
-    "id": 72,
-    "name": "Stygimoloch Gen 2",
-    "type": "common",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/stygimoloch_gen_2.png"
-  },
-  {
-    "id": 73,
-    "name": "Tanycolagreus",
-    "type": "common",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tanycolagreus.png"
-  },
-  {
-    "id": 74,
-    "name": "Tarbosaurus",
-    "type": "common",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tarbosaurus.png"
-  },
-  {
-    "id": 75,
-    "name": "Tenontosaurus",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tenontosaurus.png"
-  },
-  {
-    "id": 76,
-    "name": "Tiger",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tiger.png"
-  },
-  {
-    "id": 77,
-    "name": "Titanoboa Gen 2",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/titanoboa_gen_2.png"
-  },
-  {
-    "id": 78,
-    "name": "Triceratops",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/triceratops.png"
-  },
-  {
-    "id": 79,
-    "name": "Troodon",
-    "type": "epic",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/troodon.png"
-  },
-  {
-    "id": 80,
-    "name": "Tuojiangosaurus",
-    "type": "rare",
-    "zones": [
-      2
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tuojiangosaurus.png"
-  },
-  {
-    "id": 81,
-    "name": "Tupandactylus",
-    "type": "rare",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tupandactylus.png"
-  },
-  {
-    "id": 82,
-    "name": "Tyrannosaurus Rex",
-    "type": "epic",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tyrannosaurus_rex.png"
-  },
-  {
-    "id": 83,
-    "name": "Tyrannosaurus Rex Gen 2",
-    "type": "rare",
-    "zones": [
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/tyrannosaurus_rex_gen_2.png"
-  },
-  {
-    "id": 84,
-    "name": "Velociraptor",
-    "type": "common",
-    "zones": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/velociraptor.png"
-  },
-  {
-    "id": 85,
-    "name": "Woolly Rhino",
-    "type": "epic",
-    "zones": [
-      1
-    ],
-    "timing": [
-      "dawn",
-      "day"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/woolly_rhino.png"
-  },
-  {
-    "id": 86,
-    "name": "Yutyrannus",
-    "type": "omega",
-    "zones": [
-      3
-    ],
-    "timing": [
-      "dawn",
-      "day",
-      "dusk",
-      "night"
-    ],
-    "description": "A prehistoric creature from Jurassic World Alive.",
-    "image": "https://cdn.paleo.gg/games/jwa/images/creature/yutyrannus.png"
-  }
-];
+          {
+            "id": 1,
+            "name": "'93 Classic T. Rex",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/93_classic_t_rex.png"
+          },
+          {
+            "id": 2,
+            "name": "Acrocanthosaurus",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/acrocanthosaurus.png"
+          },
+          {
+            "id": 3,
+            "name": "Alanqa",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/alanqa.png"
+          },
+          {
+            "id": 4,
+            "name": "Albertosaurus",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/albertosaurus.png"
+          },
+          {
+            "id": 5,
+            "name": "Amphicyon",
+            "type": "common",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/amphicyon.png"
+          },
+          {
+            "id": 6,
+            "name": "Animantarx",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/animantarx.png"
+          },
+          {
+            "id": 7,
+            "name": "Ankylosaurus",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/ankylosaurus.png"
+          },
+          {
+            "id": 8,
+            "name": "Ankylosaurus Gen 2",
+            "type": "common",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/ankylosaurus_gen_2.png"
+          },
+          {
+            "id": 9,
+            "name": "Anurognathus",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/anurognathus.png"
+          },
+          {
+            "id": 10,
+            "name": "Apatosaurus",
+            "type": "common",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/apatosaurus.png"
+          },
+          {
+            "id": 11,
+            "name": "Archaeopteryx",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/archaeopteryx.png"
+          },
+          {
+            "id": 12,
+            "name": "Baryonyx Gen 2",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/baryonyx_gen_2.png"
+          },
+          {
+            "id": 13,
+            "name": "Beelzebufo",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/beelzebufo.png"
+          },
+          {
+            "id": 14,
+            "name": "Borealopelta",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/borealopelta.png"
+          },
+          {
+            "id": 15,
+            "name": "Brunette",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/brunette.png"
+          },
+          {
+            "id": 16,
+            "name": "Carbonemys",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/carbonemys.png"
+          },
+          {
+            "id": 17,
+            "name": "Carcharodontosaurus",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/carcharodontosaurus.png"
+          },
+          {
+            "id": 18,
+            "name": "Compsognathus Gen 2",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/compsognathus_gen_2.png"
+          },
+          {
+            "id": 19,
+            "name": "Cryolophosaurus",
+            "type": "omega",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/cryolophosaurus.png"
+          },
+          {
+            "id": 20,
+            "name": "Dakotaraptor",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dakotaraptor.png"
+          },
+          {
+            "id": 21,
+            "name": "Darwinopterus",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/darwinopterus.png"
+          },
+          {
+            "id": 22,
+            "name": "Deinocheirus",
+            "type": "common",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/deinocheirus.png"
+          },
+          {
+            "id": 23,
+            "name": "Deinosuchus",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/deinosuchus.png"
+          },
+          {
+            "id": 24,
+            "name": "Deinotherium",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/deinotherium.png"
+          },
+          {
+            "id": 25,
+            "name": "Dilophosaurus Gen 2",
+            "type": "common",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dilophosaurus_gen_2.png"
+          },
+          {
+            "id": 26,
+            "name": "Dimetrodon",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dimetrodon.png"
+          },
+          {
+            "id": 27,
+            "name": "Dimetrodon Gen 2",
+            "type": "common",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dimetrodon_gen_2.png"
+          },
+          {
+            "id": 28,
+            "name": "Dimorphodon",
+            "type": "common",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dimorphodon.png"
+          },
+          {
+            "id": 29,
+            "name": "Diplocaulus Gen 2",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/diplocaulus_gen_2.png"
+          },
+          {
+            "id": 30,
+            "name": "Diplodocus",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/diplodocus.png"
+          },
+          {
+            "id": 31,
+            "name": "Dodo",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dodo.png"
+          },
+          {
+            "id": 32,
+            "name": "Dsungaripterus",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/dsungaripterus.png"
+          },
+          {
+            "id": 33,
+            "name": "Echo",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/echo.png"
+          },
+          {
+            "id": 34,
+            "name": "Edmontosaurus",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/edmontosaurus.png"
+          },
+          {
+            "id": 35,
+            "name": "Einiosaurus",
+            "type": "common",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/einiosaurus.png"
+          },
+          {
+            "id": 36,
+            "name": "Elasmotherium",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/elasmotherium.png"
+          },
+          {
+            "id": 37,
+            "name": "Erlikosaurus Gen 2",
+            "type": "rare",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/erlikosaurus_gen_2.png"
+          },
+          {
+            "id": 38,
+            "name": "Erythrosuchus",
+            "type": "omega",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/erythrosuchus.png"
+          },
+          {
+            "id": 39,
+            "name": "Estemmenosuchus",
+            "type": "epic",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/estemmenosuchus.png"
+          },
+          {
+            "id": 40,
+            "name": "Fukuiraptor",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/fukuiraptor.png"
+          },
+          {
+            "id": 41,
+            "name": "Glyptodon",
+            "type": "common",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/glyptodon.png"
+          },
+          {
+            "id": 42,
+            "name": "Gorgosaurus",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/gorgosaurus.png"
+          },
+          {
+            "id": 43,
+            "name": "Haast Eagle",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/haast_eagle.png"
+          },
+          {
+            "id": 44,
+            "name": "Hatzegopteryx",
+            "type": "common",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/hatzegopteryx.png"
+          },
+          {
+            "id": 45,
+            "name": "Homalocephale",
+            "type": "omega",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/homalocephale.png"
+          },
+          {
+            "id": 46,
+            "name": "Ichthyovenator",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/ichthyovenator.png"
+          },
+          {
+            "id": 47,
+            "name": "Inostrancevia",
+            "type": "common",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/inostrancevia.png"
+          },
+          {
+            "id": 48,
+            "name": "Kaprosuchus",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/kaprosuchus.png"
+          },
+          {
+            "id": 49,
+            "name": "Koolasuchus",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/koolasuchus.png"
+          },
+          {
+            "id": 50,
+            "name": "Koolasuchus Gen 2",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/koolasuchus_gen_2.png"
+          },
+          {
+            "id": 51,
+            "name": "Lystrosaurus",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/lystrosaurus.png"
+          },
+          {
+            "id": 52,
+            "name": "Majungasaurus",
+            "type": "common",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/majungasaurus.png"
+          },
+          {
+            "id": 53,
+            "name": "Megaloceros",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/megaloceros.png"
+          },
+          {
+            "id": 54,
+            "name": "Megistotherium",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/megistotherium.png"
+          },
+          {
+            "id": 55,
+            "name": "Monkeydactyl",
+            "type": "epic",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/monkeydactyl.png"
+          },
+          {
+            "id": 56,
+            "name": "Monolophosaurus",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/monolophosaurus.png"
+          },
+          {
+            "id": 57,
+            "name": "Nomingia",
+            "type": "epic",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/nomingia.png"
+          },
+          {
+            "id": 58,
+            "name": "Nundasuchus",
+            "type": "common",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/nundasuchus.png"
+          },
+          {
+            "id": 59,
+            "name": "Ophiacodon",
+            "type": "common",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/ophiacodon.png"
+          },
+          {
+            "id": 60,
+            "name": "Ornithomimus",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/ornithomimus.png"
+          },
+          {
+            "id": 61,
+            "name": "Parasaurolophus",
+            "type": "common",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/parasaurolophus.png"
+          },
+          {
+            "id": 62,
+            "name": "Phorusrhacos",
+            "type": "common",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/phorusrhacos.png"
+          },
+          {
+            "id": 63,
+            "name": "Postosuchus",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/postosuchus.png"
+          },
+          {
+            "id": 64,
+            "name": "Proceratosaurus",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/proceratosaurus.png"
+          },
+          {
+            "id": 65,
+            "name": "Protoceratops",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/protoceratops.png"
+          },
+          {
+            "id": 66,
+            "name": "Pteranodon",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/pteranodon.png"
+          },
+          {
+            "id": 67,
+            "name": "Quetzalcoatlus",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/quetzalcoatlus.png"
+          },
+          {
+            "id": 68,
+            "name": "Quetzalcoatlus Gen 2",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/quetzalcoatlus_gen_2.png"
+          },
+          {
+            "id": 69,
+            "name": "Rajasaurus",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/rajasaurus.png"
+          },
+          {
+            "id": 70,
+            "name": "Rativates",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/rativates.png"
+          },
+          {
+            "id": 71,
+            "name": "Rebirth Spinosaurus",
+            "type": "epic",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/rebirth_spinosaurus.png"
+          },
+          {
+            "id": 72,
+            "name": "Rinchenia",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/rinchenia.png"
+          },
+          {
+            "id": 73,
+            "name": "Sarcosuchus",
+            "type": "common",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/sarcosuchus.png"
+          },
+          {
+            "id": 74,
+            "name": "Saurornitholestes",
+            "type": "common",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/saurornitholestes.png"
+          },
+          {
+            "id": 75,
+            "name": "Scaphognathus",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/scaphognathus.png"
+          },
+          {
+            "id": 76,
+            "name": "Scolosaurus",
+            "type": "common",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/scolosaurus.png"
+          },
+          {
+            "id": 77,
+            "name": "Scutosaurus",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/scutosaurus.png"
+          },
+          {
+            "id": 78,
+            "name": "Secodontosaurus",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/secodontosaurus.png"
+          },
+          {
+            "id": 79,
+            "name": "Segnosaurus",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/segnosaurus.png"
+          },
+          {
+            "id": 80,
+            "name": "Sinraptor",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/sinraptor.png"
+          },
+          {
+            "id": 81,
+            "name": "Smilodon",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/smilodon.png"
+          },
+          {
+            "id": 82,
+            "name": "Sonorasaurus",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/sonorasaurus.png"
+          },
+          {
+            "id": 83,
+            "name": "Sphaerotholus",
+            "type": "rare",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/sphaerotholus.png"
+          },
+          {
+            "id": 84,
+            "name": "Spinosaurus Gen 2",
+            "type": "epic",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/spinosaurus_gen_2.png"
+          },
+          {
+            "id": 85,
+            "name": "Stegosaurus Ungulatus",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/stegosaurus_ungulatus.png"
+          },
+          {
+            "id": 86,
+            "name": "Struthiomimus",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/struthiomimus.png"
+          },
+          {
+            "id": 87,
+            "name": "Stygimoloch Gen 2",
+            "type": "common",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/stygimoloch_gen_2.png"
+          },
+          {
+            "id": 88,
+            "name": "Suchomimus",
+            "type": "common",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/suchomimus.png"
+          },
+          {
+            "id": 89,
+            "name": "Tanycolagreus",
+            "type": "common",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tanycolagreus.png"
+          },
+          {
+            "id": 90,
+            "name": "Tarbosaurus",
+            "type": "common",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tarbosaurus.png"
+          },
+          {
+            "id": 91,
+            "name": "Tenontosaurus",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tenontosaurus.png"
+          },
+          {
+            "id": 92,
+            "name": "Tiger",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tiger.png"
+          },
+          {
+            "id": 93,
+            "name": "Titanoboa Gen 2",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/titanoboa_gen_2.png"
+          },
+          {
+            "id": 94,
+            "name": "Triceratops",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/triceratops.png"
+          },
+          {
+            "id": 95,
+            "name": "Triceratops Gen 2",
+            "type": "common",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/triceratops_gen_2.png"
+          },
+          {
+            "id": 96,
+            "name": "Troodon",
+            "type": "epic",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/troodon.png"
+          },
+          {
+            "id": 97,
+            "name": "Tuojiangosaurus",
+            "type": "rare",
+            "zones": [
+              2
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tuojiangosaurus.png"
+          },
+          {
+            "id": 98,
+            "name": "Tupandactylus",
+            "type": "rare",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tupandactylus.png"
+          },
+          {
+            "id": 99,
+            "name": "Tyrannosaur Buck",
+            "type": "epic",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tyrannosaur_buck.png"
+          },
+          {
+            "id": 100,
+            "name": "Tyrannosaurus Rex",
+            "type": "epic",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tyrannosaurus_rex.png"
+          },
+          {
+            "id": 101,
+            "name": "Tyrannosaurus Rex Gen 2",
+            "type": "rare",
+            "zones": [
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/tyrannosaurus_rex_gen_2.png"
+          },
+          {
+            "id": 102,
+            "name": "Vectispinus",
+            "type": "omega",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/vectispinus.png"
+          },
+          {
+            "id": 103,
+            "name": "Velociraptor",
+            "type": "common",
+            "zones": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/velociraptor.png"
+          },
+          {
+            "id": 104,
+            "name": "Woolly Rhino",
+            "type": "epic",
+            "zones": [
+              1
+            ],
+            "timing": [
+              "dawn",
+              "day"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/woolly_rhino.png"
+          },
+          {
+            "id": 105,
+            "name": "Yutyrannus",
+            "type": "omega",
+            "zones": [
+              3
+            ],
+            "timing": [
+              "dawn",
+              "day",
+              "dusk",
+              "night"
+            ],
+            "description": "A prehistoric creature from Jurassic World Alive.",
+            "image": "https://cdn.paleo.gg/games/jwa/images/creature/yutyrannus.png"
+          }
+        ];
     }
     
     getSampleDinosaurData() {

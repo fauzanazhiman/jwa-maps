@@ -12,8 +12,8 @@ const CONFIG = {
     PARALLEL_REFERENCE_LINE: -6.970723,   // Latitude reference (horizontal lines, North-South)
     
     // Grid Distances (in kilometers)
-    MERIDIAN_DISTANCE_KM: 4.9,    // Distance between meridians (longitude lines) in km
-    PARALLEL_DISTANCE_KM: 4.9,    // Distance between parallels (latitude lines) in km
+    MERIDIAN_DISTANCE_KM: 4.82803,    // Distance between meridians (longitude lines) in km
+    PARALLEL_DISTANCE_KM: 4.82803,    // Distance between parallels (latitude lines) in km
     
     // ======================
     // ZONE LABELING SYSTEM
@@ -44,8 +44,22 @@ const CONFIG = {
             [1, 3, 1, 3],
             [2, 4, 2, 4],
             [3, 1, 3, 1],
-            [4, 2, 4, 2],
+            [4, 2, 4, 2]
         ],
+
+        JANUARY_OFFSET: 0,  
+        FEBRUARY_OFFSET: 1, 
+        MARCH_OFFSET: 2,
+        APRIL_OFFSET: 3,
+        MAY_OFFSET: 0,
+        JUNE_OFFSET: 1,
+        JULY_OFFSET: 2,
+        AUGUST_OFFSET: 3,
+        SEPTEMBER_OFFSET: 0,
+        OCTOBER_OFFSET: 1,
+        NOVEMBER_OFFSET: 2,
+        DECEMBER_OFFSET: 3,
+
         // Quadrant boundaries (only used if PATTERN_TYPE is 'quadrant')
         QUADRANT_BOUNDARIES: {
             CENTER_LAT: 40.7128,    // Center latitude for quadrant division

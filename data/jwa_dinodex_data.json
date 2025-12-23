@@ -7,7 +7,7 @@
         "description": "Find in-depth information about all creatures in Jurassic World Alive.",
         "imagePath": "/jwa/images/icons/dinodex.png",
         "themeColor": "#53dfeb",
-        "lastModifiedDate": "2025-09-26"
+        "lastModifiedDate": "2025-12-08"
       },
       "page": {
         "navItemLogo": {
@@ -70,7 +70,7 @@
         "title": "Dinodex",
         "subtitles": [
           "Find in-depth information about all creatures in Jurassic World Alive.",
-          "Last updated date: 2025-09-26"
+          "Last updated date: 2025-12-08"
         ]
       },
       "breadcrumb": {
@@ -172,6 +172,49 @@
               }
             ],
             "key": "aenocyonyx"
+          },
+          {
+            "uuid": "aerospinosaurus",
+            "name": "Aerospinosaurus",
+            "rarity": "unique",
+            "class": "wild_card",
+            "hybrid_type": "hybrid",
+            "health": 4650,
+            "damage": 1700,
+            "speed": 123,
+            "armor": 10,
+            "crit": 25,
+            "critm": 150,
+            "version": "v3.17",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "aerospinosaurus"
+          },
+          {
+            "uuid": "aerotitan",
+            "name": "Aerotitan",
+            "rarity": "epic",
+            "class": "cunning_resilient",
+            "hybrid_type": "non_hybrid",
+            "health": 4200,
+            "damage": 1300,
+            "speed": 123,
+            "armor": 10,
+            "crit": 25,
+            "critm": 150,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "sanctuary"
+              },
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "aerotitan"
           },
           {
             "uuid": "ailurarctos",
@@ -535,10 +578,10 @@
             "rarity": "unique",
             "class": "fierce_resilient",
             "hybrid_type": "hybrid",
-            "health": 6000,
-            "damage": 1600,
+            "health": 5900,
+            "damage": 1550,
             "speed": 105,
-            "armor": 25,
+            "armor": 20,
             "crit": 10,
             "critm": 125,
             "version": "v3.11",
@@ -948,7 +991,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_AF/AN/AS/OC/US"
+                "loc": "continent_NA/SA/US"
               }
             ],
             "key": "antarctopelta"
@@ -1099,6 +1142,29 @@
             "key": "aquilamimus"
           },
           {
+            "uuid": "aquilops",
+            "name": "Aquilops",
+            "rarity": "rare",
+            "class": "resilient",
+            "hybrid_type": "non_hybrid",
+            "health": 3900,
+            "damage": 1300,
+            "speed": 115,
+            "armor": 5,
+            "crit": 5,
+            "critm": 125,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "sanctuary"
+              },
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "aquilops"
+          },
+          {
             "uuid": "aquilosaurus",
             "name": "Aquilosaurus",
             "rarity": "unique",
@@ -1137,6 +1203,46 @@
               }
             ],
             "key": "aquilotae"
+          },
+          {
+            "uuid": "aquiraptor",
+            "name": "Aquiraptor",
+            "rarity": "unique",
+            "class": "cunning_resilient",
+            "hybrid_type": "super_hybrid",
+            "health": 4200,
+            "damage": 1350,
+            "speed": 122,
+            "armor": 20,
+            "crit": 10,
+            "critm": 125,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "aquiraptor"
+          },
+          {
+            "uuid": "aquisaurus",
+            "name": "Aquisaurus",
+            "rarity": "legendary",
+            "class": "cunning_resilient",
+            "hybrid_type": "hybrid",
+            "health": 4000,
+            "damage": 1300,
+            "speed": 122,
+            "armor": 20,
+            "crit": 5,
+            "critm": 125,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "aquisaurus"
           },
           {
             "uuid": "arambourgiania",
@@ -1357,12 +1463,12 @@
             "rarity": "unique",
             "class": "wild_card",
             "hybrid_type": "super_hybrid",
-            "health": 3300,
-            "damage": 1300,
-            "speed": 123,
+            "health": 3650,
+            "damage": 1350,
+            "speed": 126,
             "armor": 0,
             "crit": 25,
-            "critm": 125,
+            "critm": 133,
             "version": "v2.14",
             "dna_source": [
               {
@@ -1533,15 +1639,35 @@
             "key": "atrocodistis"
           },
           {
+            "uuid": "atrocomaxima",
+            "name": "Atrocomaxima",
+            "rarity": "apex",
+            "class": "wild_card",
+            "hybrid_type": "mega_hybrid",
+            "health": 6000,
+            "damage": 1550,
+            "speed": 125,
+            "armor": 15,
+            "crit": 30,
+            "critm": 125,
+            "version": "v3.17",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "atrocomaxima"
+          },
+          {
             "uuid": "atromolistis",
             "name": "Atromolistis",
             "rarity": "apex",
             "class": "wild_card",
             "hybrid_type": "giga_hybrid",
-            "health": 4600,
-            "damage": 1500,
+            "health": 4800,
+            "damage": 1450,
             "speed": 124,
-            "armor": 15,
+            "armor": 10,
             "crit": 5,
             "critm": 125,
             "version": "v3.13",
@@ -1711,7 +1837,7 @@
             "rarity": "apex",
             "class": "wild_card",
             "hybrid_type": "mega_hybrid",
-            "health": 4750,
+            "health": 5000,
             "damage": 1600,
             "speed": 127,
             "armor": 15,
@@ -1814,6 +1940,26 @@
               }
             ],
             "key": "beta"
+          },
+          {
+            "uuid": "big_eatie",
+            "name": "Big Eatie",
+            "rarity": "omega",
+            "class": "wild_card",
+            "hybrid_type": "non_hybrid",
+            "health": 800,
+            "damage": 500,
+            "speed": 105,
+            "armor": 5,
+            "crit": 0,
+            "critm": 125,
+            "version": "v3.17",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "big_eatie"
           },
           {
             "uuid": "blonde",
@@ -2392,7 +2538,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "compsognathus"
@@ -2766,6 +2912,15 @@
             "dna_source": [
               {
                 "loc": "sanctuary"
+              },
+              {
+                "loc": "local_area_4",
+                "time": [
+                  "dawn",
+                  "day",
+                  "dusk",
+                  "night"
+                ]
               },
               {
                 "loc": "arena"
@@ -3397,15 +3552,6 @@
             "dna_source": [
               {
                 "loc": "sanctuary"
-              },
-              {
-                "loc": "everywhere",
-                "time": [
-                  "dawn",
-                  "day",
-                  "dusk",
-                  "night"
-                ]
               },
               {
                 "loc": "local_area_4",
@@ -4199,15 +4345,6 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "everywhere",
-                "time": [
-                  "dawn",
-                  "day",
-                  "dusk",
-                  "night"
-                ]
-              },
-              {
                 "loc": "short_range",
                 "time": [
                   "dawn",
@@ -4416,6 +4553,26 @@
             "key": "fukuisaurus"
           },
           {
+            "uuid": "fukuitops",
+            "name": "Fukuitops",
+            "rarity": "apex",
+            "class": "wild_card",
+            "hybrid_type": "mega_hybrid",
+            "health": 4900,
+            "damage": 1650,
+            "speed": 131,
+            "armor": 15,
+            "crit": 15,
+            "critm": 125,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "fukuitops"
+          },
+          {
             "uuid": "gallimimus",
             "name": "Gallimimus",
             "rarity": "common",
@@ -4502,7 +4659,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "geosternbergia"
@@ -5162,7 +5319,7 @@
                 ]
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "iguanodon"
@@ -6205,7 +6362,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "megalosaurus"
@@ -6361,7 +6518,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "miragaia"
@@ -6391,6 +6548,26 @@
               }
             ],
             "key": "monkeydactyl"
+          },
+          {
+            "uuid": "monkeyondactylus",
+            "name": "Monkeyondactylus",
+            "rarity": "unique",
+            "class": "cunning_resilient",
+            "hybrid_type": "giga_hybrid",
+            "health": 4500,
+            "damage": 1650,
+            "speed": 125,
+            "armor": 20,
+            "crit": 10,
+            "critm": 125,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "monkeyondactylus"
           },
           {
             "uuid": "monolometrodon",
@@ -6560,6 +6737,9 @@
                 "loc": "sanctuary"
               },
               {
+                "loc": "continent_AF/AN/AS/OC/US"
+              },
+              {
                 "loc": "strike_towers"
               },
               {
@@ -6614,6 +6794,26 @@
               }
             ],
             "key": "moschops"
+          },
+          {
+            "uuid": "mutadon",
+            "name": "Mutadon",
+            "rarity": "unique",
+            "class": "cunning_fierce",
+            "hybrid_type": "non_hybrid",
+            "health": 4800,
+            "damage": 1650,
+            "speed": 129,
+            "armor": 0,
+            "crit": 5,
+            "critm": 125,
+            "version": "v3.16",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "mutadon"
           },
           {
             "uuid": "nasutoceratops",
@@ -6792,6 +6992,26 @@
               }
             ],
             "key": "nundasuchus"
+          },
+          {
+            "uuid": "nyctopteryx",
+            "name": "Nyctopteryx",
+            "rarity": "unique",
+            "class": "wild_card",
+            "hybrid_type": "super_hybrid",
+            "health": 4600,
+            "damage": 1600,
+            "speed": 127,
+            "armor": 0,
+            "crit": 25,
+            "critm": 135,
+            "version": "v3.17",
+            "dna_source": [
+              {
+                "loc": "none"
+              }
+            ],
+            "key": "nyctopteryx"
           },
           {
             "uuid": "nyctosaurus",
@@ -7360,6 +7580,15 @@
                 "loc": "sanctuary"
               },
               {
+                "loc": "park",
+                "time": [
+                  "dawn",
+                  "day",
+                  "dusk",
+                  "night"
+                ]
+              },
+              {
                 "loc": "arena"
               },
               {
@@ -7817,7 +8046,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "pyroraptor"
@@ -7840,7 +8069,7 @@
                 "loc": "sanctuary"
               },
               {
-                "loc": "continent_EU"
+                "loc": "continent_EU/US"
               }
             ],
             "key": "pyroraptor_gen_2"
@@ -8173,7 +8402,13 @@
             "version": "v3.15",
             "dna_source": [
               {
-                "loc": "none"
+                "loc": "short_range",
+                "time": [
+                  "dawn",
+                  "day",
+                  "dusk",
+                  "night"
+                ]
               }
             ],
             "key": "rebirth_spinosaurus"
@@ -8578,6 +8813,15 @@
             "dna_source": [
               {
                 "loc": "sanctuary"
+              },
+              {
+                "loc": "local_area_1",
+                "time": [
+                  "dawn",
+                  "day",
+                  "dusk",
+                  "night"
+                ]
               },
               {
                 "loc": "arena"
@@ -9309,10 +9553,10 @@
             "rarity": "apex",
             "class": "fierce_resilient",
             "hybrid_type": "mega_hybrid",
-            "health": 4800,
-            "damage": 1700,
+            "health": 4700,
+            "damage": 1600,
             "speed": 118,
-            "armor": 30,
+            "armor": 25,
             "crit": 20,
             "critm": 125,
             "version": "v3.12",
@@ -9509,10 +9753,10 @@
             "rarity": "unique",
             "class": "fierce_resilient",
             "hybrid_type": "super_hybrid",
-            "health": 4050,
-            "damage": 1150,
+            "health": 5000,
+            "damage": 1450,
             "speed": 128,
-            "armor": 0,
+            "armor": 15,
             "crit": 5,
             "critm": 125,
             "version": "v1.6",
@@ -9611,6 +9855,15 @@
             "dna_source": [
               {
                 "loc": "sanctuary"
+              },
+              {
+                "loc": "local_area_2",
+                "time": [
+                  "dawn",
+                  "day",
+                  "dusk",
+                  "night"
+                ]
               },
               {
                 "loc": "arena"
@@ -10209,6 +10462,15 @@
             "dna_source": [
               {
                 "loc": "sanctuary"
+              },
+              {
+                "loc": "local_area_3",
+                "time": [
+                  "dawn",
+                  "day",
+                  "dusk",
+                  "night"
+                ]
               },
               {
                 "loc": "arena"
@@ -11007,11 +11269,11 @@
               },
               {
                 "value": "continent_AF/AN/AS/OC/US",
-                "label": "Continental Asia & Rest Of World"
+                "label": "Continental Asia \u0026 Rest Of World"
               },
               {
-                "value": "continent_EU",
-                "label": "Continental Europe"
+                "value": "continent_EU/US",
+                "label": "continent_EU/US"
               },
               {
                 "value": "continent_NA/SA/US",
@@ -11206,6 +11468,10 @@
                 "label": "Special (Distortus Rex)"
               },
               {
+                "value": "family_062",
+                "label": "Special (Mutadon)"
+              },
+              {
                 "value": "family_001",
                 "label": "Theropod (Large)"
               },
@@ -11248,6 +11514,10 @@
               {
                 "value": "family_058",
                 "label": "Ceratopsid (Small)"
+              },
+              {
+                "value": "family_060",
+                "label": "Ceratopsid (Flock)"
               },
               {
                 "value": "family_002",
@@ -11612,6 +11882,10 @@
                     "label": "Speed Decrease: 25%"
                   },
                   {
+                    "value": "4__33",
+                    "label": "Speed Decrease: 33%"
+                  },
+                  {
                     "value": "4__50",
                     "label": "Speed Decrease: 50%"
                   },
@@ -11807,6 +12081,10 @@
                     "label": "Heal Reduction: 100%"
                   }
                 ]
+              },
+              {
+                "label": "Daze",
+                "options": []
               }
             ]
           },
@@ -11839,6 +12117,10 @@
                   {
                     "value": "7897710827a8e734288fd3a8c9a1ccab",
                     "label": "Aerial Dominance"
+                  },
+                  {
+                    "value": "d72b0a7a36aef954a8d31509e1c82822",
+                    "label": "Aerial Evasion"
                   },
                   {
                     "value": "6cc6a7fb421c1c041b3fcb89b3e767ae",
@@ -11877,6 +12159,10 @@
                     "label": "Afflicting Strike"
                   },
                   {
+                    "value": "7308f8f9b2d9740408becec93c256e9d",
+                    "label": "Afflicting Swoop"
+                  },
+                  {
                     "value": "30da92e1d1867ca47ac496c3b231978d",
                     "label": "Afflicting Trap"
                   },
@@ -11887,6 +12173,10 @@
                   {
                     "value": "01225ebf7e29853459b584e3021da1c7",
                     "label": "Agile Dominance"
+                  },
+                  {
+                    "value": "ot__16e884e07f04ce64c92b9185ad4a2c9b_510c472008643b64fabed2375e1f5844__33",
+                    "label": "Alert All Out Resilient Impact"
                   },
                   {
                     "value": "ot__243a98ea87299354083d55578f1ba2fa_c03d2f19a8341fd4e97d4185138c914b__33",
@@ -11973,6 +12263,10 @@
                     "label": "Alert Instant Shielded Strike"
                   },
                   {
+                    "value": "ot__b1ae4ece79df5c84586c6910cd7c6a81_466503e33a6e88e43ac6c62ae5a4fc46__50",
+                    "label": "Alert Lacerate"
+                  },
+                  {
                     "value": "ot__3a5b63a3fb0d8ed4f95261fa4a2bb63a_6b350c5159f6b3b4292d6e5b8b265cf5__33",
                     "label": "Alert Lockdown Impact"
                   },
@@ -11999,6 +12293,10 @@
                   {
                     "value": "ot__7ee64b2fd3860cc4c89571836392d7c1_2a7a0c38fd7aa644d8a537b023858b12__33",
                     "label": "Alert Rampage Overthrow"
+                  },
+                  {
+                    "value": "ot__17a80719bd6bf7f46b22cf916dea677b_750e50e6fb6b0c44280b6d989ffbd6db__33",
+                    "label": "Alert Resilient Healing Strike"
                   },
                   {
                     "value": "ot__475bb11e09815034dbd8418f5e697cf8_24db16b467a3fb14995ac9e1711ae2cd__50",
@@ -12161,6 +12459,10 @@
                     "label": "Blessed Shield Strike"
                   },
                   {
+                    "value": "271066f448425d8439124984288ea26f",
+                    "label": "Blessed Strike"
+                  },
+                  {
                     "value": "1138075e44beaa242ab473bbe843823b",
                     "label": "Blighted Dodging Impact"
                   },
@@ -12181,8 +12483,16 @@
                     "label": "Blighted Pounce"
                   },
                   {
+                    "value": "89953dc68341d64429360ac67ccbfbb7",
+                    "label": "Blighted Stall"
+                  },
+                  {
                     "value": "9653d849fee46ae44b589b7cdd79ed4c",
                     "label": "Blighted Strike"
+                  },
+                  {
+                    "value": "2b303b3dfe30d93459632e019e724905",
+                    "label": "Blinding Escape"
                   },
                   {
                     "value": "b9a2ec1a383deac4cbd87d7ea410a71f",
@@ -12381,6 +12691,10 @@
                     "label": "Crippling Triple Spear"
                   },
                   {
+                    "value": "d8a7e6999fa6bda49a826c05a9ad31f5",
+                    "label": "Critical Decelerating Rampage And Run"
+                  },
+                  {
                     "value": "6002f674cfa37324395a6d9b5eb94e6a",
                     "label": "Critical Dual Claws"
                   },
@@ -12433,6 +12747,10 @@
                     "label": "Cunning Ferocious Strike"
                   },
                   {
+                    "value": "0c05d2a0a7167314a81170b673ab5305",
+                    "label": "Cunning Fierce Rampage"
+                  },
+                  {
                     "value": "9d6ceea40650c484b89c7fb838bdcb9d",
                     "label": "Cunning Fierce Strike"
                   },
@@ -12467,6 +12785,10 @@
                   {
                     "value": "e4869f31daa1b044bb0f34038c7bee65",
                     "label": "Daring Strike"
+                  },
+                  {
+                    "value": "56b6927b63c10034e8a13c5a1b9f7e93",
+                    "label": "Dazing Flight And Run"
                   },
                   {
                     "value": "7ecf16fd547989e46b0bf28a6393be5f",
@@ -12519,6 +12841,10 @@
                   {
                     "value": "bad4489036531b44a931a26fa53313c0",
                     "label": "Decimating Telson"
+                  },
+                  {
+                    "value": "9a313ab4090e27d45b8e509ac9f6e1d8",
+                    "label": "Defend The Herd"
                   },
                   {
                     "value": "ot__459b4386e44bfe9439cbe9d53369bcbe_afd9b5f4fe47fed43be70f3f1abc9f1b__50",
@@ -13293,6 +13619,10 @@
                     "label": "Group Revenge Shattering Rampage"
                   },
                   {
+                    "value": "607b207196a8abb4e89ed74f1c2b5b1c",
+                    "label": "Group Ripping Impact"
+                  },
+                  {
                     "value": "7eaed5645a600934da618a416b177e0d",
                     "label": "Group Shattering Impact"
                   },
@@ -13387,6 +13717,10 @@
                   {
                     "value": "486964e2502d33d4198a743e1198d813",
                     "label": "Healing Fierce Strike"
+                  },
+                  {
+                    "value": "084c54e9b26af1b4493fd33f1cfacf1d",
+                    "label": "Healing Formation"
                   },
                   {
                     "value": "0c0b1498c8263c1489fc4580d7304b9e",
@@ -13617,6 +13951,10 @@
                     "label": "Instant Resilient Impact"
                   },
                   {
+                    "value": "2e6c63070c6846b4ebeee6b426360905",
+                    "label": "Instant Resilient Rampage"
+                  },
+                  {
                     "value": "b7e85486a274d1b4baf88728f37c4061",
                     "label": "Instant Resilient Strike"
                   },
@@ -13691,6 +14029,10 @@
                   {
                     "value": "175579e5b0cff98489cb7c8fd219ca51",
                     "label": "Invincible Blighted Strike"
+                  },
+                  {
+                    "value": "51a0b7b56d22e144390b83ffffd6649c",
+                    "label": "Invincible Shattering Rampage"
                   },
                   {
                     "value": "ab878daea8424264c974147418d95af7",
@@ -13841,6 +14183,10 @@
                     "label": "Minor Wounding Strike"
                   },
                   {
+                    "value": "6175e5f4916621c4789038ccbc56cd36",
+                    "label": "Motherly Instinct"
+                  },
+                  {
                     "value": "9d25000b3c578f2428dddd7dba3d64e9",
                     "label": "Mutual Bloodthirst"
                   },
@@ -13911,6 +14257,10 @@
                   {
                     "value": "5e850ad875e1efe4fbf3301820554748",
                     "label": "Piercing Bulwark Impact"
+                  },
+                  {
+                    "value": "6fe5dbcd7dadb574f96e935b27a6d57b",
+                    "label": "Piercing Cunning Charge"
                   },
                   {
                     "value": "r__d39d59b363f34df49b9027f0e2e93696_eb6830368ae26ca44b3d7d590cb4877f",
@@ -14265,6 +14615,10 @@
                     "label": "Shattering Triple Jab"
                   },
                   {
+                    "value": "688154e1798b45a4ba761b335050420e",
+                    "label": "Sheltering Impact"
+                  },
+                  {
                     "value": "90b93df0b2b0a58439d54c62d96826d7",
                     "label": "Shield Advantage"
                   },
@@ -14389,6 +14743,10 @@
                     "label": "Stall"
                   },
                   {
+                    "value": "1c6ed3c6f05f9f043acf4650665ecc29",
+                    "label": "Steal Vigor"
+                  },
+                  {
                     "value": "be64b360f63fea343973c0384963c987",
                     "label": "Strike"
                   },
@@ -14419,6 +14777,10 @@
                   {
                     "value": "69ef69df49cd0dd41af357394f15f4e6",
                     "label": "Stunning Slowing Vulnerable Impact"
+                  },
+                  {
+                    "value": "9035219efd0c4b5459da51097a722b84",
+                    "label": "Stunning Swarm"
                   },
                   {
                     "value": "a9e3a6eb01eb96a48b66d13bf2749c3c",
@@ -14601,10 +14963,6 @@
                     "label": "Vitalizing Impact"
                   },
                   {
-                    "value": "688154e1798b45a4ba761b335050420e",
-                    "label": "Vitalizing Impact"
-                  },
-                  {
                     "value": "2daa3c3de1e49f64089c00a797a2aae2",
                     "label": "Vulnerability Impact"
                   },
@@ -14718,11 +15076,19 @@
                     "label": "Counter Ferocity"
                   },
                   {
+                    "value": "37f1d6ebc73fd454897ac32d7ac654cd",
+                    "label": "Counter Fierce Strike"
+                  },
+                  {
                     "value": "9dd1a684a061a5b4c967d0a6da919336",
                     "label": "Counter Infected Bite"
                   },
                   {
                     "value": "4dd218fa93bf61c4aba9a00ceb69ca77",
+                    "label": "Counter Power Heal"
+                  },
+                  {
+                    "value": "ot__@_a54ff500d664c6e4e808729c291e35c1__33",
                     "label": "Counter Power Heal"
                   },
                   {
@@ -14838,6 +15204,10 @@
                     "label": "Ferocious Counter Stun"
                   },
                   {
+                    "value": "af0b7b0984a3d6d4b991156e3a67bbf9",
+                    "label": "Feverish Venom Counter"
+                  },
+                  {
                     "value": "4fb7707b1b45d624b919c6de2f5da372",
                     "label": "Fierce Counter"
                   },
@@ -14895,6 +15265,10 @@
                   },
                   {
                     "value": "e7fc4dfb500edf94892755c701548f73",
+                    "label": "Minor Critical Counter"
+                  },
+                  {
+                    "value": "4fd16df8288496544873a84e57fcb21b",
                     "label": "Minor Critical Counter"
                   },
                   {
@@ -14972,6 +15346,10 @@
                   {
                     "value": "33b1e533ac2e72241a4f010c20a2a520",
                     "label": "Robbing Wing"
+                  },
+                  {
+                    "value": "d9280e5f0877315499185b1b189bdb0a",
+                    "label": "Rude Awakening"
                   },
                   {
                     "value": "f86149ee12fade846acaab5213625fd1",
@@ -15127,6 +15505,10 @@
                     "label": "Swap In Afflict And Dodge"
                   },
                   {
+                    "value": "41fe29a2cfc91d1488e3adc7a9f6d22a",
+                    "label": "Swap In Afflicting Invincibility"
+                  },
+                  {
                     "value": "9ff8fd0f46e65744898868f53193e9b3",
                     "label": "Swap In Afflicting Vulnerability"
                   },
@@ -15161,6 +15543,10 @@
                   {
                     "value": "dead8166f345495409a0e97c60ec15be",
                     "label": "Swap In Cunning Impact"
+                  },
+                  {
+                    "value": "51029c0227902e94faded8797329887e",
+                    "label": "Swap In Daze"
                   },
                   {
                     "value": "98548dd2a77980e468d4dbb315485ffe",
@@ -15368,11 +15754,11 @@
                     "label": "Afflicting Lockdown On Escape"
                   },
                   {
-                    "value": "ot__184d35f77cd02dd41b4f43f3f36b292f_cd8b0617cabb8ce4786707ff698d3050__25",
+                    "value": "ot__184d35f77cd02dd41b4f43f3f36b292f_cd8b0617cabb8ce4786707ff698d3050__33",
                     "label": "Alert Momentum On Escape"
                   },
                   {
-                    "value": "ot__184d35f77cd02dd41b4f43f3f36b292f_cd8b0617cabb8ce4786707ff698d3050__33",
+                    "value": "ot__184d35f77cd02dd41b4f43f3f36b292f_cd8b0617cabb8ce4786707ff698d3050__25",
                     "label": "Alert Momentum On Escape"
                   },
                   {
@@ -15542,6 +15928,10 @@
                   {
                     "value": "6a6d8d4e40b430047a16d7d467633e55",
                     "label": "On Escape Critical Impact"
+                  },
+                  {
+                    "value": "eb2873acb12059141bd3c851835a563e",
+                    "label": "On Escape Critical Locking Impact"
                   },
                   {
                     "value": "dfe7344fb6e2e964596e6e3a676de8b6",
@@ -15926,6 +16316,14 @@
             "placeholder": "Release Version",
             "options": [
               {
+                "value": "v3.17",
+                "label": "v3.17"
+              },
+              {
+                "value": "v3.16",
+                "label": "v3.16"
+              },
+              {
                 "value": "v3.15",
                 "label": "v3.15"
               },
@@ -16291,7 +16689,7 @@
           "reset": "Reset",
           "restore": "Restore",
           "save": "Save",
-          "save-generate-image": "Save & Generate Image",
+          "save-generate-image": "Save \u0026 Generate Image",
           "search": "Search",
           "share": "Share",
           "shared": "Shared",
@@ -16429,13 +16827,14 @@
           "support": "Support",
           "updated-at": "Updated At",
           "updated-dates": "Data collection dates",
-          "credit-source": "Credit: <work>{work}</work>, made by <author>{author}</author>.",
+          "credit-source": "Credit: \u003cwork\u003e{work}\u003c/work\u003e, made by \u003cauthor\u003e{author}\u003c/author\u003e.",
           "call-to-adjust-creature": "Click each creature profile picture to adjust level and boosts, or remove the creature.",
           "call-to-create-one": "Click \"Add\" button to create your first one!",
           "warning-removed-creature": "This creature was datamined but later removed from the game.",
           "warning-unreleased-creature": "This creature is datamined but not released yet. Stats and info here may change once the creature is actually released.",
           "warning-wip": "This section is still a work in progress. Some data may be incomplete or incorrect.",
-          "warning-cached-creations": "All your creations are stored in your browser cache. They would be forever gone if your browser cache is cleared. Be sure to back them up by exporting them to a file."
+          "warning-cached-creations": "All your creations are stored in your browser cache. They would be forever gone if your browser cache is cleared. Be sure to back them up by exporting them to a file.",
+          "warning-unmaintained": "I no longer have time to maintain this feature. It has bugs and may be removed in the future."
         },
         "dinodex": {
           "apex": "Apex",
@@ -16480,6 +16879,7 @@
           "rst_armor_decrease": "Reduced Armor",
           "rst_resistance_decrease_all": "Affliction",
           "rst_heal_decrease": "Heal Reduction",
+          "rst_daze": "Daze",
           "abilities": "Abilities",
           "ability": "Ability",
           "icon": "Icon",
@@ -16566,7 +16966,7 @@
           "arena": "Arena",
           "sanctuary": "Sanctuary",
           "continent": "Continent",
-          "continent_AF/AN/AS/OC/US": "Continental Asia & Rest Of World",
+          "continent_AF/AN/AS/OC/US": "Continental Asia \u0026 Rest Of World",
           "continent_EU": "Continental Europe",
           "continent_NA/SA/US": "Continental Americas",
           "short_range": "Short Range",
@@ -16682,6 +17082,7 @@
           "swap_prevent": "Unable To Swap",
           "dot": "Damage Over Time",
           "stun": "Stun",
+          "daze": "Daze",
           "resistance_decrease_all": "Affliction",
           "cleanse": "Cleanse",
           "remove_all_neg": "Cleanse All Negative Effects",
@@ -16712,6 +17113,7 @@
           "group_heal_increase": "Group Increase Healing Received",
           "group_heal_decrease": "Group Reduce Healing Received",
           "group_stun": "Group Stun",
+          "group_daze": "Group Daze",
           "group_taunt": "Group Taunt",
           "group_cheat_death": "Group Cheat Death",
           "group_vulner": "Group Impose Vulnerability",
@@ -16816,7 +17218,9 @@
           "family_057": "Spinosaurid (New)",
           "family_058": "Ceratopsid (Small)",
           "family_059": "Sauropod (Titanic)",
+          "family_060": "Ceratopsid (Flock)",
           "family_061": "Special (Distortus Rex)",
+          "family_062": "Special (Mutadon)",
           "family_063": "Spinosaurid (New 2)",
           "reset_points": "Reset Points",
           "preset_points": "Preset Points",
@@ -16830,18 +17234,22 @@
           "skin_0922f": "WROTH",
           "skin_amprex": "BLIGHT",
           "skin_ankylom": "LICHEN",
+          "skin_aquignathus_1": "ROOTS",
           "skin_ruby": "RUBY",
           "skin_mystic": "MYSTIC",
+          "skin_gem": "GEM",
           "skin_0124f": "SPIRIT",
           "skin_frost": "FROST",
           "skin_1022s2": "SPAWN",
           "skin_1022s3": "DRIFT",
+          "skin_atrocomaxima_1": "SAVANNA",
           "skin_tendril": "TENDRIL",
           "skin_aust": "MARSH",
           "skin_0722f": "BESIEGER",
           "skin_burst": "BURST",
           "skin_boundless": "BOUNDLESS",
           "skin_bore": "GALE",
+          "skin_centroceratops_1": "VENOMOUS",
           "skin_turf": "TURF",
           "skin_ceras": "SHADE",
           "skin_0822p": "TRESPASS",
@@ -16861,6 +17269,7 @@
           "skin_eremoca": "PELT",
           "skin_estem": "BARREN",
           "skin_1022s4": "PRODIGAL",
+          "skin_dappled": "DAPPLED",
           "skin_giga": "MANTLE",
           "skin_0722p": "CITADEL",
           "skin_gracil": "PLUME",
@@ -16873,11 +17282,14 @@
           "skin_kent": "LITHIC",
           "skin_0323p": "CREST",
           "skin_megal": "PINION",
+          "skin_obsidian": "OBSIDIAN",
           "skin_monke": "SCATTER",
           "skin_monol": "PLAINS",
           "skin_0622p": "EMPEROR",
           "skin_nomin": "NESTLING",
+          "skin_nyctopteryx _1": "EQUATOR",
           "skin_olor": "HATCHET",
+          "skin_tropical": "TROPICAL",
           "skin_0523f": "HAWK",
           "skin_pant": "NYX",
           "skin_plat": "SHRED",
@@ -16924,6 +17336,8 @@
           "acrocanthops": "Acrocanthops",
           "acrocanthosaurus": "Acrocanthosaurus",
           "aenocyonyx": "Aenocyonyx",
+          "aerospinosaurus": "Aerospinosaurus",
+          "aerotitan": "Aerotitan",
           "ailurarctos": "Ailurarctos",
           "alacranix": "Alacranix",
           "alankydactylus": "Alankydactylus",
@@ -16963,9 +17377,13 @@
           "apatoceratops": "Apatoceratops",
           "apatosaurus": "Apatosaurus",
           "aquicomilus": "Aquicomilus",
+          "aquignathus": "Aquignathus",
           "aquilamimus": "Aquilamimus",
+          "aquilops": "Aquilops",
           "aquilosaurus": "Aquilosaurus",
           "aquilotae": "Aquilotae",
+          "aquiraptor": "Aquiraptor",
+          "aquisaurus": "Aquisaurus",
           "arambourgiania": "Arambourgiania",
           "archaeopteryx": "Archaeopteryx",
           "archaeotherium": "Archaeotherium",
@@ -16983,6 +17401,7 @@
           "armbrusters_wolf": "Armbruster's Wolf",
           "atrocimoloch": "Atrocimoloch",
           "atrocodistis": "Atrocodistis",
+          "atrocomaxima": "Atrocomaxima",
           "atromolistis": "Atromolistis",
           "australotitan": "Australotitan",
           "b_alacranix": "Alacranix Boss",
@@ -17033,6 +17452,7 @@
           "b_tyrannoc_2": "D. Rex Boss",
           "b_tyrannoc_3": "D. Rex Boss",
           "b_tyrannosa": "Tyrannosaurus Rex Boss",
+          "b_velopter": "",
           "bajadasaurus": "Bajadasaurus",
           "bajatonodon": "Bajatonodon",
           "baryonyx": "Baryonyx",
@@ -17044,6 +17464,7 @@
           "becklophosaurus": "Becklophosaurus",
           "beelzebufo": "Beelzebufo",
           "beta": "Beta",
+          "big_eatie": "Big Eatie",
           "blonde": "Blonde",
           "blue": "Blue",
           "borealopelta": "Borealopelta",
@@ -17057,6 +17478,8 @@
           "carcharodontosaurus": "Carcharodontosaurus",
           "carnotarkus": "Carnotarkus",
           "carnotaurus": "Carnotaurus",
+          "centroceratops": "Centroceratops",
+          "centrosaurus": "Centrosaurus",
           "ceramagnus": "Ceramagnus",
           "ceranosaurus": "Ceranosaurus",
           "cerastegotops": "Cerastegotops",
@@ -17154,6 +17577,7 @@
           "fukuimimus": "Fukuimimus",
           "fukuiraptor": "Fukuiraptor",
           "fukuisaurus": "Fukuisaurus",
+          "fukuitops": "Fukuitops",
           "gallimimus": "Gallimimus",
           "geminideus": "Geminideus",
           "geminititan": "Geminititan",
@@ -17275,6 +17699,7 @@
           "microraptor": "Microraptor",
           "miragaia": "Miragaia",
           "monkeydactyl": "Monkeydactyl",
+          "monkeyondactylus": "Monkeyondactylus",
           "monolometrodon": "Monolometrodon",
           "monolomoth": "Monolomoth",
           "monolophosaurus": "Monolophosaurus",
@@ -17285,6 +17710,8 @@
           "moros_intrepidus": "Moros Intrepidus",
           "mortem_rex": "Mortem Rex",
           "moschops": "Moschops",
+          "mutadon": "Mutadon",
+          "nanotyrannus": "Nanotyrannus",
           "nasutoceratops": "Nasutoceratops",
           "nodopatosaurus": "Nodopatosaurus",
           "nodopatotitan": "Nodopatotitan",
@@ -17292,6 +17719,7 @@
           "nomingia": "Nomingia",
           "nominrex": "Nominrex",
           "nundasuchus": "Nundasuchus",
+          "nyctopteryx": "Nyctopteryx",
           "nyctosaurus": "Nyctosaurus",
           "olorotitan": "Olorotitan",
           "ophiacodon": "Ophiacodon",
@@ -17476,7 +17904,7 @@
   },
   "page": "/games/jurassic-world-alive/dinodex",
   "query": {},
-  "buildId": "NZLb3mpjArkvMNJDI6Rs6",
+  "buildId": "SIC3EJ6GUB6z01CizBFEs",
   "isFallback": false,
   "isExperimentalCompile": false,
   "gssp": true,

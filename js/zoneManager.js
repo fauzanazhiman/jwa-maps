@@ -217,7 +217,83 @@ class ZoneManager {
         const patternX = ((gridX % patternWidth) + patternWidth) % patternWidth;
         const patternY = ((gridY % patternHeight) + patternHeight) % patternHeight;
         
-        return pattern[patternY][patternX];
+        // Get the base zone value from the pattern
+        const baseZone = pattern[patternY][patternX];
+        
+        // Get the current offset based on month and first Monday rule
+        const offset = this.getCurrentMonthOffset();
+        
+        // Apply offset to rotate the zone (zones are 1-4, so we adjust accordingly)
+        // offset = 0: no change (1,2,3,4 -> 1,2,3,4)
+        // offset = 1: rotate by 1 (1,2,3,4 -> 2,3,4,1)
+        // offset = 2: rotate by 2 (1,2,3,4 -> 3,4,1,2)
+        // offset = 3: rotate by 3 (1,2,3,4 -> 4,1,2,3)
+        const rotatedZone = ((baseZone - 1 + offset) % 4) + 1;
+        
+        return rotatedZone;
+    }
+    
+    /**
+     * Get the current month's offset, considering the first Monday rule.
+     * The offset only applies starting from the first Monday of the month.
+     * Before the first Monday, the previous month's offset is used.
+     */
+    getCurrentMonthOffset() {
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth(); // 0-indexed (0 = January)
+        const currentDay = now.getDate();
+        
+        // Find the first Monday of the current month
+        const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+        const firstDayWeekday = firstDayOfMonth.getDay(); // 0 = Sunday, 1 = Monday, ...
+        
+        // Calculate which day of the month is the first Monday
+        // If first day is Monday (1), first Monday is day 1
+        // If first day is Tuesday (2), first Monday is day 7 (1 + 7 - 2 + 1 = 7)
+        // If first day is Sunday (0), first Monday is day 2
+        let firstMondayDay;
+        if (firstDayWeekday === 1) {
+            firstMondayDay = 1; // First day is Monday
+        } else if (firstDayWeekday === 0) {
+            firstMondayDay = 2; // First day is Sunday, Monday is the 2nd
+        } else {
+            firstMondayDay = 1 + (8 - firstDayWeekday); // Days until next Monday
+        }
+        
+        // Determine which month's offset to use
+        let effectiveMonth;
+        if (currentDay >= firstMondayDay) {
+            // We're on or after the first Monday, use current month's offset
+            effectiveMonth = currentMonth;
+        } else {
+            // We're before the first Monday, use previous month's offset
+            effectiveMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+        }
+        
+        // Get the offset for the effective month
+        const monthOffsets = [
+            CONFIG.ZONE_PATTERN.JANUARY_OFFSET,   // 0 = January
+            CONFIG.ZONE_PATTERN.FEBRUARY_OFFSET,  // 1 = February
+            CONFIG.ZONE_PATTERN.MARCH_OFFSET,     // 2 = March
+            CONFIG.ZONE_PATTERN.APRIL_OFFSET,     // 3 = April
+            CONFIG.ZONE_PATTERN.MAY_OFFSET,       // 4 = May
+            CONFIG.ZONE_PATTERN.JUNE_OFFSET,      // 5 = June
+            CONFIG.ZONE_PATTERN.JULY_OFFSET,      // 6 = July
+            CONFIG.ZONE_PATTERN.AUGUST_OFFSET,    // 7 = August
+            CONFIG.ZONE_PATTERN.SEPTEMBER_OFFSET, // 8 = September
+            CONFIG.ZONE_PATTERN.OCTOBER_OFFSET,   // 9 = October
+            CONFIG.ZONE_PATTERN.NOVEMBER_OFFSET,  // 10 = November
+            CONFIG.ZONE_PATTERN.DECEMBER_OFFSET   // 11 = December
+        ];
+        
+        const offset = monthOffsets[effectiveMonth] || 0;
+        
+        if (CONFIG.DEBUG.ENABLED && CONFIG.DEBUG.LOG_ZONE_ASSIGNMENTS) {
+            console.log(`Month offset calculation: Current date ${now.toDateString()}, First Monday: day ${firstMondayDay}, Effective month: ${effectiveMonth}, Offset: ${offset}`);
+        }
+        
+        return offset;
     }
     
     drawZonesWithLabels() {
