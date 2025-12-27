@@ -297,6 +297,24 @@ body {
     background-color: #2980b9;
 }
 
+.location-btn.tracking-active {
+    background-color: #e74c3c;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.location-btn.tracking-active:hover {
+    background-color: #c0392b;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
 .panel-btn {
     background-color: #e67e22;
 }
@@ -323,7 +341,7 @@ body {
 /* Map Controls */
 .map-controls {
     position: absolute;
-    top: 8px;
+    bottom: 20px;
     right: 8px;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.85);
@@ -1271,15 +1289,14 @@ kbd {
     
     .map-controls {
         position: fixed;
-        top: 64px;
+        bottom: 10px;
         right: 4px;
         left: auto;
         width: auto;
-        min-width: auto;
-        padding: 8px;
+        min-width: 140px;
+        padding: 8px 10px;
         backdrop-filter: blur(8px);
-        /* Ensure it doesn't conflict with zoom controls */
-        max-width: calc(100vw - 80px);
+        font-size: 12px;
     }
     
     .modal-content {
@@ -1321,12 +1338,10 @@ kbd {
     }
     
     .map-controls {
-        top: 6px;
+        bottom: 12px;
         right: 6px;
         left: auto;
         min-width: 180px;
-        /* Ensure proper spacing from zoom controls */
-        max-width: calc(100vw - 80px);
     }
 }
 

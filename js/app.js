@@ -11,6 +11,19 @@
                     window.analytics.trackButtonClick('my_location');
                 }
             });
+        }
+        
+        // Track Location toggle button
+        const trackLocationBtn = document.getElementById('trackLocationBtn');
+        if (trackLocationBtn) {
+            trackLocationBtn.addEventListener('click', () => {
+                this.toggleLocationTracking();
+                
+                // Track location tracking toggle
+                if (window.analytics) {
+                    window.analytics.trackButtonClick('track_location');
+                }
+            });
         }====================================================== */
 
 class JWAMapApp {
@@ -22,6 +35,8 @@ class JWAMapApp {
         this.adManager = null;
         this.userLocationMarker = null;
         this.currentUserZone = null;
+        this.locationWatchId = null;
+        this.isTrackingLocation = false;
         
         this.init();
     }
@@ -150,11 +165,15 @@ class JWAMapApp {
     }
     
     setupEventHandlers() {
-        // My Location button
+        // My Location button - automatically enables tracking
         const myLocationBtn = document.getElementById('myLocationBtn');
         if (myLocationBtn) {
             myLocationBtn.addEventListener('click', () => {
-                this.goToMyLocation();
+                if (this.isTrackingLocation) {
+                    this.stopLocationTracking();
+                } else {
+                    this.startLocationTracking();
+                }
             });
         }
         
@@ -269,6 +288,13 @@ class JWAMapApp {
             this.handleWindowResize();
         });
         
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', () => {
+            if (this.isTrackingLocation) {
+                this.stopLocationTracking();
+            }
+        });
+        
         if (CONFIG.DEBUG.ENABLED) {
             console.log('Event handlers set up');
         }
@@ -283,6 +309,77 @@ class JWAMapApp {
         
         // Try to get initial position
         this.getCurrentLocation();
+    }
+    
+    toggleLocationTracking() {
+        if (this.isTrackingLocation) {
+            this.stopLocationTracking();
+        } else {
+            this.startLocationTracking();
+        }
+    }
+    
+    startLocationTracking() {
+        if (!navigator.geolocation) {
+            console.warn('Geolocation is not supported by this browser');
+            return;
+        }
+        
+        const myLocationBtn = document.getElementById('myLocationBtn');
+        
+        if (myLocationBtn) {
+            myLocationBtn.textContent = '⏹️ Stop Tracking';
+            myLocationBtn.classList.add('tracking-active');
+        }
+        
+        this.isTrackingLocation = true;
+        
+        // Start watching position with continuous updates
+        this.locationWatchId = navigator.geolocation.watchPosition(
+            (position) => {
+                this.handleLocationSuccess(position);
+            },
+            (error) => {
+                this.handleLocationError(error);
+            },
+            {
+                ...CONFIG.GEOLOCATION.OPTIONS,
+                maximumAge: 0  // Always get fresh location
+            }
+        );
+        
+        if (CONFIG.DEBUG.ENABLED) {
+            console.log('Location tracking started');
+        }
+        
+        // Track location tracking start
+        if (window.analytics) {
+            window.analytics.trackLocationTrackingStart();
+        }
+    }
+    
+    stopLocationTracking() {
+        if (this.locationWatchId !== null) {
+            navigator.geolocation.clearWatch(this.locationWatchId);
+            this.locationWatchId = null;
+        }
+        
+        this.isTrackingLocation = false;
+        
+        const myLocationBtn = document.getElementById('myLocationBtn');
+        if (myLocationBtn) {
+            myLocationBtn.textContent = '📍 My Location';
+            myLocationBtn.classList.remove('tracking-active');
+        }
+        
+        if (CONFIG.DEBUG.ENABLED) {
+            console.log('Location tracking stopped');
+        }
+        
+        // Track location tracking stop
+        if (window.analytics) {
+            window.analytics.trackLocationTrackingStop();
+        }
     }
     
     getCurrentLocation() {

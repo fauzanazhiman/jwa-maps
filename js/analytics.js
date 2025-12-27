@@ -66,6 +66,20 @@ class Analytics {
         });
     }
 
+    trackLocationTrackingStart() {
+        this.track('location_tracking_started', {
+            event_category: 'geolocation',
+            event_label: 'continuous_tracking_enabled'
+        });
+    }
+
+    trackLocationTrackingStop() {
+        this.track('location_tracking_stopped', {
+            event_category: 'geolocation',
+            event_label: 'continuous_tracking_disabled'
+        });
+    }
+
     // Dinosaur search tracking
     trackDinosaurSearch(searchTerm, resultsCount) {
         this.track('dinosaur_search', {
