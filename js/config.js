@@ -9,7 +9,7 @@ const CONFIG = {
     
     // Reference Lines (adjust these coordinates for your specific map area)
     MERIDIAN_REFERENCE_LINE: 107.577570,  // Longitude reference (vertical lines, East-West)
-    PARALLEL_REFERENCE_LINE: -6.970723,   // Latitude reference (horizontal lines, North-South)
+    PARALLEL_REFERENCE_LINE: -6.969621,   // Latitude reference (horizontal lines, North-South)
     
     // Grid Distances (in kilometers)
     MERIDIAN_DISTANCE_KM: 4.82803,    // Distance between meridians (longitude lines) in km
